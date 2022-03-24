@@ -1,0 +1,13 @@
+equipment-on-grass : https://www.pexels.com/photo/golf-clubs-on-the-grass-6370107/
+family-walking : https://www.pexels.com/photo/family-carrying-golf-clubs-while-walking-9207310/
+man-swinging : https://www.pexels.com/photo/man-playing-golf-together-with-his-children-9207301/
+ball-next-to-hole : 
+nice-landscape : https://www.pexels.com/photo/bridge-clouds-club-countryside-209982/
+man-swinging-sunset : https://www.pexels.com/photo/bridge-clouds-club-countryside-209982/
+herbology-course : https://www.pexels.com/photo/unrecognizable-girl-playing-golf-against-urban-building-7514005/
+woman-with-clubs : https://www.pexels.com/photo/a-woman-smiling-at-the-camera-6370138/
+mini-golf-box : https://unsplash.com/photos/b-MxyARecGw
+entrance-flag : https://unsplash.com/photos/gAwXPezHdhk
+forest-course : https://unsplash.com/photos/tj-VVjE3Usg
+man-on-darkgreen : https://unsplash.com/photos/GFfDwN2e4Gg
+sandwich : https://unsplash.com/photos/Ea_IbQfxm-0
