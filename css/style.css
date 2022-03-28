@@ -28,19 +28,15 @@ nav {
 }
 
 .home-link {
+  display: flex;
   margin: 1rem;
 }
-
-.home-link h3 {
-  float: left;
-}
-
 .home-logo {
   height: 2rem;
-  float: left;
+
   margin-right: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 nav ul {
