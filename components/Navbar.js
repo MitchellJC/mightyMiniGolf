@@ -14,10 +14,10 @@ class Navbar extends HTMLElement {
         </a>
 
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="food.html">Food and Drink</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="book.html">Book</a></li>
+          <li><a href="about.html"><h4>About</h4></a></li>
+          <li><a href="food.html"><h4>Food and Drink</h4></a></li>
+          <li><a href="contact.html"><h4>Contact</h4></a></li>
+          <li><a href="book.html"><h4>Book</h4></a></li>
         </ul>
       </nav>
       </header>

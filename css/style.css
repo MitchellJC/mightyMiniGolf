@@ -1,5 +1,7 @@
-:root {
-  font-family: Verdana;
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -22,6 +24,7 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: darkseagreen;
+  width: 100vw;
 }
 
 .home-link {
@@ -35,13 +38,20 @@ nav {
 .home-logo {
   height: 2rem;
   float: left;
-  margin: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 nav ul {
   display: flex;
+  margin: 1rem;
+  justify-content: center;
 }
 
 nav li {
-  margin: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
