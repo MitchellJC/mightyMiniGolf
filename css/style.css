@@ -14,9 +14,17 @@ ul {
   padding: 0;
 }
 
-section,
 footer {
   margin: 1rem;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20rem;
+  margin-left: 20rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Header */
