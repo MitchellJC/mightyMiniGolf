@@ -13,6 +13,29 @@ ul {
 }
 
 /* Header */
+.home-link {
+  margin: 1rem;
+}
+
+.home-link h3 {
+  float: left;
+}
+
 .home-logo {
   height: 2rem;
+  float: left;
+  margin: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin: 1rem;
 }

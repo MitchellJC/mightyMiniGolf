@@ -8,8 +8,10 @@ class Navbar extends HTMLElement {
         this.innerHTML = `
       <header>
       <nav>
-        <a href="index.html">Mighty Mini Golf</a>
-        <img class="home-logo" src="../images/golfball.svg" alt="Golf ball">
+        <a class="home-link" href="index.html">
+          <img class="home-logo" src="../images/golfball.svg" alt="Golf ball">
+          <h3>Mighty Mini Golf</h3>
+        </a>
 
         <ul>
           <li><a href="about.html">About</a></li>
