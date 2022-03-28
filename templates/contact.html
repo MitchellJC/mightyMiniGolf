@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Contact Us | Mighty Mini Golf</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <script src="../components/Navbar.js" type="text/javascript" defer></script>
     <script src="../components/Footer.js" type="text/javascript" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <navbar-component></navbar-component>
-    <section class="title-section">
+    <div class="content-container">
+      <section class="title-section">
         <h1>Contact Us</h1>
-    </section>
-
-    <section class="contact-form-section">
-        <h2>Send Us a Message</h2>
-        <form>
+      </section>
+      <section class="contact-form-section">
+        <div class="section-text">
+          <h2>Send Us a Message</h2>
+          <form>
             <label for="contact-fname">First Name:</label>
-            <input type="text" id="contact-fname" name="contact-fname" required>
-
+            <input
+              type="text"
+              id="contact-fname"
+              name="contact-fname"
+              required
+            />
             <label for="contact-lname">Last Name:</label>
-            <input type="text" id="contact-lname" name="contact-lname">
-
+            <input type="text" id="contact-lname" name="contact-lname" />
             <label for="contact-email">Your Email:</label>
-            <input type="email" id="contact-email" name="contact-email" required>
-
+            <input
+              type="email"
+              id="contact-email"
+              name="contact-email"
+              required
+            />
             <label for="contact-phone">Your Phone:</label>
-            <input type="tel" id="contact-phone" name="contact-phone" required>
-
-            <label for="contact-terms">I have read and accept the <a href="terms.html" target="_blank_">terms and conditions</a></label>
-            <input type="checkbox" id="contact-terms" name="contact-terms" required>
-
-            <label for="contact-promo">I would like to receive Mighty Mini  Golf deals and discounts</label>
-            <input type="checkbox" id="contact-promo" name="contact-promo">
-
-            <input type="submit" value="Submit">
-        </form>
-    </section>
-
-    <section class="contact-details-section">
-        <h2>Alternative Ways to Contact Us</h2>
-        <ul>
+            <input
+              type="tel"
+              id="contact-phone"
+              name="contact-phone"
+              required
+            />
+            <label for="contact-terms"
+              >I have read and accept the
+              <a href="terms.html" target="_blank_"
+                >terms and conditions</a
+              ></label
+            >
+            <input
+              type="checkbox"
+              id="contact-terms"
+              name="contact-terms"
+              required
+            />
+            <label for="contact-promo"
+              >I would like to receive Mighty Mini Golf deals and
+              discounts</label
+            >
+            <input type="checkbox" id="contact-promo" name="contact-promo" />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+      <section class="contact-details-section">
+        <div class="section-text">
+          <h2>Alternative Ways to Contact Us</h2>
+          <ul>
             <!--Fake unallocated number from https://fakenumber.org/au/queensland-->
             <li>Phone Us: 07 5550 9664</li>
             <li>Email Us: minigolfenquiries@golf.com.au</li>
             <li>Visit Us: 23 Mills Street, Brisbane, Queensland(QLD), 4000</li>
-        </ul>
-    </section>
+          </ul>
+        </div>
+      </section>
+    </div>
     <footer-component></footer-component>
-</body>
+  </body>
 </html>

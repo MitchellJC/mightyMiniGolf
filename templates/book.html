@@ -11,168 +11,161 @@
 
 <body>
     <navbar-component></navbar-component>
-    <section class="price-section">
-        <h2>Our Prices</h2>
-        <table>
-            <tr>
-                <th>Booking Type</th>
-                <th>Activities</th>
-                <th>Price</th>
-            </tr>
+    <div class="content-container">
+        <section class="price-section">
 
-            <tr>
-                <td>Child (14 and under)</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>8 holes</td>
-                        </tr>
-                        <tr>
-                            <td>16 holes</td>
-                        </tr>
-                        <tr>
-                            <td>Unlimited laser tag</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>$6</td>
-                        </tr>
-                        <tr>
-                            <td>$8</td>
-                        </tr>
-                        <tr>
-                            <td>$6</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Adult</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>8 holes</td>
-                        </tr>
-                        <tr>
-                            <td>16 holes</td>
-                        </tr>
-                        <tr>
-                            <td>Unlimited laser tag</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>$12</td>
-                        </tr>
-                        <tr>
-                            <td>$14</td>
-                        </tr>
-                        <tr>
-                            <td>$12</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Concession</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>8 holes</td>
-                        </tr>
-                        <tr>
-                            <td>16 holes</td>
-                        </tr>
-                        <tr>
-                            <td>Unlimited laser tag</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>$8</td>
-                        </tr>
-                        <tr>
-                            <td>$10</td>
-                        </tr>
-                        <tr>
-                            <td>$8</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Party Pack</td>
-                <td>
-                    Includes 16 holes and unlimited laser tag for up to 5 people
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>$50</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <section class="book-section">
-        <h2>Book With Us</h2>
-        <form>
-            <label for="book-fname">First Name:</label>
-            <input type="text" id="book-fname" name="book-fname" required>
-
-            <label for="book-lname">Last Name:</label>
-            <input type="text" id="book-lname" name="book-lname">
-
-            <label for="book-email">Your Email:</label>
-            <input type="text" id="book-email" name="book-email" required>
-
-            <label for="book-phone">Your Phone:</label>
-            <input type="tel" id="book-phone" name="book-phone" required>
-
-            <label for="book-date-time">Date to Book:</label>
-            <input type="datetime-local" id="book-date-time" name="book-date-time" step="3600" required>
-
-            <label for="book-type">Booking Type:</label>
-            <select id="book-type" name="book-type" required>
-                <option value="Adult">Adult</option>
-                <option value="Adult">Child</option>
-                <option value="Adult">Concession</option>
-                <option value="Adult">Party Pack</option>
-            </select>
-
-            <label for="book-holes">Number of Holes to Play:</label>
-            <select id="book-holes" name="book-holes" required>
-                <option value="None">None</option>
-                <option value="8 Holes">8 Holes</option>
-                <option value="16 Holes">16 Holes</option>
-            </select>
-
-            <label for="book-laser">Do You Want Laser Tag:</label>
-            <select id="book-laser" name="book-laser" required>
-                <option value="None">None</option>
-                <option value="Unlimited Laser Tag">Unlimited Laser Tag</option>
-            </select>
-
-            <label for="book-terms">I have read and accept the <a href="terms.html" target="_blank_">terms and
-                    conditions</a></label>
-            <input type="checkbox" id="book-terms" name="book-terms" required>
-
-            <label for="book-promo">I would like to receive Mighty Mini Golf deals and discounts</label>
-            <input type="checkbox" id="book-promo" name="book-promo">
-
-            <input type="submit" value="Continue To Checkout">
+            <div class="section-text">
+                <h2>Our Prices</h2>
+                <table>
+                    <tr>
+                        <th>Booking Type</th>
+                        <th>Activities</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Child (14 and under)</td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>8 holes</td>
+                                </tr>
+                                <tr>
+                                    <td>16 holes</td>
+                                </tr>
+                                <tr>
+                                    <td>Unlimited laser tag</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>$6</td>
+                                </tr>
+                                <tr>
+                                    <td>$8</td>
+                                </tr>
+                                <tr>
+                                    <td>$6</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Adult</td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>8 holes</td>
+                                </tr>
+                                <tr>
+                                    <td>16 holes</td>
+                                </tr>
+                                <tr>
+                                    <td>Unlimited laser tag</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>$12</td>
+                                </tr>
+                                <tr>
+                                    <td>$14</td>
+                                </tr>
+                                <tr>
+                                    <td>$12</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Concession</td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>8 holes</td>
+                                </tr>
+                                <tr>
+                                    <td>16 holes</td>
+                                </tr>
+                                <tr>
+                                    <td>Unlimited laser tag</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>$8</td>
+                                </tr>
+                                <tr>
+                                    <td>$10</td>
+                                </tr>
+                                <tr>
+                                    <td>$8</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Party Pack</td>
+                        <td>
+                            Includes 16 holes and unlimited laser tag for up to 5 people
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>$50</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="book-section">
+            <div class="section-text">
+                <h2>Book With Us</h2>
+                <form>
+                    <label for="book-fname">First Name:</label>
+                    <input type="text" id="book-fname" name="book-fname" required>
+                    <label for="book-lname">Last Name:</label>
+                    <input type="text" id="book-lname" name="book-lname">
+                    <label for="book-email">Your Email:</label>
+                    <input type="text" id="book-email" name="book-email" required>
+                    <label for="book-phone">Your Phone:</label>
+                    <input type="tel" id="book-phone" name="book-phone" required>
+                    <label for="book-date-time">Date to Book:</label>
+                    <input type="datetime-local" id="book-date-time" name="book-date-time" step="3600" required>
+                    <label for="book-type">Booking Type:</label>
+                    <select id="book-type" name="book-type" required>
+                        <option value="Adult">Adult</option>
+                        <option value="Adult">Child</option>
+                        <option value="Adult">Concession</option>
+                        <option value="Adult">Party Pack</option>
+                    </select>
+                    <label for="book-holes">Number of Holes to Play:</label>
+                    <select id="book-holes" name="book-holes" required>
+                        <option value="None">None</option>
+                        <option value="8 Holes">8 Holes</option>
+                        <option value="16 Holes">16 Holes</option>
+                    </select>
+                    <label for="book-laser">Do You Want Laser Tag:</label>
+                    <select id="book-laser" name="book-laser" required>
+                        <option value="None">None</option>
+                        <option value="Unlimited Laser Tag">Unlimited Laser Tag</option>
+                    </select>
+                    <label for="book-terms">I have read and accept the <a href="terms.html" target="_blank_">terms and
+                            conditions</a></label>
+                    <input type="checkbox" id="book-terms" name="book-terms" required>
+                    <label for="book-promo">I would like to receive Mighty Mini Golf deals and discounts</label>
+                    <input type="checkbox" id="book-promo" name="book-promo">
+                    <input type="submit" value="Continue To Checkout">
+                </form>
+            </div>
+    </div>
     <footer-component></footer-component>
 </body>
 
