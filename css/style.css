@@ -12,7 +12,18 @@ ul {
   padding: 0;
 }
 
+section,
+footer {
+  margin: 1rem;
+}
+
 /* Header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkseagreen;
+}
+
 .home-link {
   margin: 1rem;
 }
@@ -25,11 +36,6 @@ ul {
   height: 2rem;
   float: left;
   margin: 1rem;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
 }
 
 nav ul {
