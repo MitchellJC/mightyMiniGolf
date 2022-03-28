@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Teko&display=swap");
+
+/* General */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -20,11 +23,19 @@ footer {
 
 section {
   display: flex;
-  justify-content: space-around;
-  margin-right: 20rem;
-  margin-left: 20rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.content-container {
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -37,12 +48,14 @@ nav {
 
 .home-link {
   display: flex;
-  margin: 1rem;
+  margin-left: 2rem;
 }
 
 nav h1 {
   margin-top: auto;
   margin-bottom: auto;
+  font-family: "Teko", sans-serif;
+  font-size: xx-large;
 }
 
 .home-logo {
@@ -53,9 +66,11 @@ nav h1 {
 }
 
 nav ul {
+  margin-right: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
-  margin: 1rem;
-  justify-content: center;
+  font-size: large;
 }
 
 nav li {
@@ -67,4 +82,26 @@ nav li {
 
 nav a:hover {
   color: aliceblue;
+}
+
+/* Home Page */
+/* Hero Section */
+.hero-section {
+  display: block;
+  margin-top: 0;
+  background-image: url("../images/birds-eye-course.jpg");
+  background-position: center;
+  background-size: 100vw;
+  height: 50vh;
+  width: 100vw;
+}
+
+.hero-section .content-container {
+  background-color: aliceblue;
+  height: 50vh;
+  opacity: 50%;
+}
+
+.hero-section .content-container > * {
+  opacity: 100%;
 }
