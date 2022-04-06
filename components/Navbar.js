@@ -23,15 +23,15 @@ class Navbar extends HTMLElement {
         </header>
       `;
       
-      let page = document.URL;
-      if (page.includes("about")) {
-        document.getElementById("about-link").style.color = "white";
-      } else if (page.includes("food")) {
-        document.getElementById("food-link").style.color = "white";
-      } else if (page.includes("contact")) {
-        document.getElementById("contact-link").style.color = "white";
-      } else if (page.includes("book")) {
-        document.getElementById("book-link").style.color = "white";
+      let pageUrl = document.URL;
+      if (pageUrl.includes("about")) {
+        document.getElementById("about-link").classList.add("current-page-link");
+      } else if (pageUrl.includes("food")) {
+        document.getElementById("food-link").classList.add("current-page-link");
+      } else if (pageUrl.includes("contact")) {
+        document.getElementById("contact-link").classList.add("current-page-link");
+      } else if (pageUrl.includes("book")) {
+        document.getElementById("book-link").classList.add("current-page-link");
       }
       
       
