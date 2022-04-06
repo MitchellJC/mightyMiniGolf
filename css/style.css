@@ -152,9 +152,8 @@ footer ul {
   font-size: x-large;
 }
 
-.hero-section a:hover{
-  background-color: darkseagreen;
-  color: black;
+.hero-section a:focus{
+  background-color: rgb(167, 162, 95);
 }
 
 /* Booking Section */
