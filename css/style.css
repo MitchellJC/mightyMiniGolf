@@ -31,6 +31,11 @@ form {
   flex-direction: column;
 }
 
+section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 /* Header */
 nav {
   display: flex;
@@ -84,9 +89,7 @@ nav a:hover {
 /* Home Page */
 .home-section {
   display: flex;
-  justify-content: space-between;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  justify-content: space-between; 
 }
 
 .home-section img{
@@ -98,6 +101,7 @@ nav a:hover {
   justify-content: center;
   margin-top: 0;
   background-image: url("../images/birds-eye-course.jpg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw;
   height: 50vh;
