@@ -172,10 +172,18 @@ footer ul {
   text-align: center;
 }
 
-.hero-section a:focus {
-  background-image: linear-gradient(to top left, rgb(2, 102, 102), rgb(22, 165, 165));
+.hero-section a:hover {
+  color: darkseagreen;
+  background-color: white;
+  background-image: none;
 }
 
+.hero-section a:focus {
+  background-color: lightgrey;
+}
+
+
+/* About Section */
 /* Contact Page */
 .contact-submit-list li b{
   text-align: right;
