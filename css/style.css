@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("../images/beanstalk.jpg");
+
 }
 
 a {
@@ -109,7 +110,6 @@ footer {
   background-color: lightgrey;
   padding: 1rem;
   width: 100%;
-  margin: 0;
 }
 
 /* Home Page */
