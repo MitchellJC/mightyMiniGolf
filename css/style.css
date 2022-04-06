@@ -35,7 +35,7 @@ form {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: darkseagreen;
+  background-image: linear-gradient(to bottom right, rgb(73, 141, 73), darkseagreen);
   width: 100vw;
 }
 
@@ -52,7 +52,8 @@ nav h1 {
   font-size: xx-large;
 
   /* Simulates text stroke */
-  text-shadow: .1rem .1rem black, -.1rem -.1rem black, .1rem -.1rem black, -.1rem .1rem black;
+  text-shadow: .1rem .1rem black, -.1rem -.1rem black, 
+  .1rem -.1rem black, -.1rem .1rem black;
 }
 
 .home-logo {
@@ -88,9 +89,13 @@ nav a:hover {
   margin-bottom: 4rem;
 }
 
+.home-section img{
+  margin-left: 1rem;
+}
+
 /* Hero Section */
 .hero-section {
-  display: block;
+  justify-content: center;
   margin-top: 0;
   background-image: url("../images/birds-eye-course.jpg");
   background-position: center;
@@ -100,11 +105,34 @@ nav a:hover {
 }
 
 .hero-section .content-container {
-  background-color: aliceblue;
-  height: 50vh;
-  opacity: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: white;
+  width: 25vw;
+  height: 25vh;
+  display: flex;
 }
 
-.hero-section .content-container > * {
+.hero-section a {
+  font-weight: bold;
   opacity: 100%;
+  margin: auto;
+  background-color: darkseagreen;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: 1rem;
+}
+
+/* Booking Section */
+table {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+th, .booking-table,  .booking table > tr > td {
+  border: .1rem solid;
 }
