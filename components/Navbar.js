@@ -32,8 +32,11 @@ class Navbar extends HTMLElement {
         document.getElementById("contact-link").style.color = "white";
       } else if (page.includes("book")) {
         document.getElementById("book-link").style.color = "white";
-      } 
+      }
+      
+      
     }
+
   }
 
   customElements.define('navbar-component', Navbar);
