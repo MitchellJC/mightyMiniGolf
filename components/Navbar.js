@@ -9,7 +9,7 @@ class Navbar extends HTMLElement {
       <header>
       <nav>
         <a class="home-link" href="index.html">
-          <img class="home-logo" src="../images/golfball.svg" alt="Golf ball">
+          <img class="home-logo" src="../images/golfball-50px.svg" alt="Golf ball">
           <h1>Mighty Mini Golf</h1>
         </a>
 
