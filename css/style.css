@@ -127,12 +127,13 @@ nav a:hover {
 
 /* Booking Section */
 table {
-  text-align: center;
   width: 100%;
+}
+
+table, th, tr, td{
+  text-align: center;
   border-collapse: collapse;
+  border: 1px solid;
 }
 
 
-th, .booking-table,  .booking table > tr > td {
-  border: .1rem solid;
-}
