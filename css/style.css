@@ -176,7 +176,12 @@ footer ul {
   background-image: linear-gradient(to top left, rgb(2, 102, 102), rgb(22, 165, 165));
 }
 
-/* Booking Section */
+/* Contact Page */
+.contact-submit-list li b{
+  text-align: right;
+}
+
+/* Booking Page */
 table {
   width: 100%;
 }
