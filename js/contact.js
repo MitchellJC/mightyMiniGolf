@@ -22,5 +22,6 @@ form.addEventListener('submit', (event) => {
         <li><b>Your Email:</b> ${userInfo["contact-email"]}</li>
         <li><b>Your Phone:</b> ${userInfo["contact-phone"]}</li>
     </ul>`;
+    
     form.style.minHeight = `${formHeight}px`;
 });

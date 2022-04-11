@@ -3,7 +3,10 @@ class Navbar extends HTMLElement {
       super();
     }
 
-    /** Runs everytime element is inserted into document object model. */
+    /** Runs everytime element is inserted into document object model. Sets html for Navbar element 
+     * and sets the navbar link representing the current page to a class which marks it as the 
+     * current page for styling.
+    */
     connectedCallback() {
         this.innerHTML = `
         <header>

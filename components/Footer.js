@@ -3,7 +3,7 @@ class Footer extends HTMLElement {
       super();
     }
 
-    /** Runs everytime element is inserted into document object model. */
+    /** Runs everytime element is inserted into document object model. Sets html for Footer element.*/
     connectedCallback() {
         this.innerHTML = `
       <footer>
