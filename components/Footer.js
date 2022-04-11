@@ -7,6 +7,7 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
       <footer>
+      <div class="content-container">
       <ul>
         <li><a href="index.html">Home Page</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -15,6 +16,7 @@ class Footer extends HTMLElement {
         <li><a href="food.html">Food and Drink</a></li>
         <li><a href="terms.html">Terms and Conditions</a></li>
       </ul>
+      </div>
       </footer>
     `;
     }
