@@ -159,7 +159,7 @@ footer ul {
   width: 25vw;
   height: 25vh;
   display: flex;
-  background-color: rgb(145, 142, 142, 0.8);
+  background-color: rgba(143, 188, 143, 0.644);
 }
 
 .hero-section a {
