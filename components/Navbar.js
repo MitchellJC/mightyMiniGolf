@@ -1,3 +1,22 @@
+const NAVBAR_HTML = 
+`
+<header>
+<nav>
+  <a class="home-link" href="index.html">
+    <img class="home-logo" src="../images/golfball-50px.svg" alt="Golf ball">
+    <h1>Mighty Mini Golf</h1>
+  </a>
+
+  <ul>
+    <li><a id="about-link" href="about.html"><h4>About</h4></a></li>
+    <li><a id="food-link" href="food.html"><h4>Food and Drink</h4></a></li>
+    <li><a id="contact-link" href="contact.html"><h4>Contact</h4></a></li>
+    <li><a id="book-link" href="book.html"><h4>Book</h4></a></li>
+  </ul>
+</nav>
+</header>
+`;
+
 /** Class representing Navbar. The navbar contains 
  * company logo and links to 
  * Home, About, Food, Contact and Booking pages.
@@ -13,23 +32,7 @@ class Navbar extends HTMLElement {
      * current-page-link for styling.
     */
     connectedCallback() {
-        this.innerHTML = `
-        <header>
-        <nav>
-          <a class="home-link" href="index.html">
-            <img class="home-logo" src="../images/golfball-50px.svg" alt="Golf ball">
-            <h1>Mighty Mini Golf</h1>
-          </a>
-
-          <ul>
-            <li><a id="about-link" href="about.html"><h4>About</h4></a></li>
-            <li><a id="food-link" href="food.html"><h4>Food and Drink</h4></a></li>
-            <li><a id="contact-link" href="contact.html"><h4>Contact</h4></a></li>
-            <li><a id="book-link" href="book.html"><h4>Book</h4></a></li>
-          </ul>
-        </nav>
-        </header>
-      `;
+        this.innerHTML = NAVBAR_HTML;
       
       let pageUrl = document.URL;
       if (pageUrl.includes("about")) {
