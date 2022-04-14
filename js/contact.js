@@ -1,6 +1,11 @@
 const form = document.getElementById("contact-form");
 const formHeight = form.getBoundingClientRect()["height"];
 
+/** When submit event happens replace form with
+ * message outlining details of contact form submission.
+ * Shows the users inputted 
+ * first name, last name, email and phone.
+ */
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     

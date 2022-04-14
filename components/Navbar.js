@@ -10,7 +10,7 @@ class Navbar extends HTMLElement {
 
     /** Runs everytime element is inserted into document object model. Sets html for Navbar element 
      * and sets the navbar link representing the current page to a class which marks it as the 
-     * current page for styling.
+     * current-page-link for styling.
     */
     connectedCallback() {
         this.innerHTML = `
