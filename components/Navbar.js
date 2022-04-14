@@ -32,7 +32,7 @@ class Navbar extends HTMLElement {
      * current-page-link for styling.
     */
     connectedCallback() {
-        this.innerHTML = NAVBAR_HTML;
+      this.innerHTML = NAVBAR_HTML;
       
       let pageUrl = document.URL;
       if (pageUrl.includes("about")) {

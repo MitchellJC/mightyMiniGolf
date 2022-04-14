@@ -1,7 +1,7 @@
 (function(){
     const form = document.getElementById("contact-form");
     const formHeight = form.getBoundingClientRect()["height"];
-    const forSubmissionMessage = (firstName, lastName, email, phone) =>   
+    const formSubmissionMessage = (firstName, lastName, email, phone) =>   
     `<p>
     Thank you for contacting us ${firstName}, 
     one of our friendly team members will get back to you shortly. 
@@ -29,12 +29,12 @@
             userInfo[field.id] = field.value;
         }
 
-        form.innerHTML= forSubmissionMessage(
+        form.style.minHeight = `${formHeight}px`;
+
+        form.innerHTML= formSubmissionMessage(
         userInfo["contact-fname"], 
         userInfo["contact-lname"], 
         userInfo["contact-email"], 
         userInfo["contact-phone"]);
-        
-        form.style.minHeight = `${formHeight}px`;
     });
 })();
