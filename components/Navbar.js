@@ -1,4 +1,9 @@
+/** Class representing Navbar. The navbar contains 
+ * company logo and links to 
+ * Home, About, Food, Contact and Booking pages.
+ */
 class Navbar extends HTMLElement {
+    /** Initialise new Navbar instance */
     constructor() {
       super();
     }

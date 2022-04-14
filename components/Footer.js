@@ -1,4 +1,9 @@
+/** Class representing Footer. The footer contains 
+ * links to 
+ * Home, About, Food, Contact, Booking and Terms pages.
+ */
 class Footer extends HTMLElement {
+    /** Initialise new Footer instance. */
     constructor() {
       super();
     }
