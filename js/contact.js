@@ -14,12 +14,6 @@
     <li><b>Your Phone:</b> ${phone}</li>
     </ul>`;
 
-    /** When submit event happens replace form with
-     * message outlining details of contact form submission.
-     * Shows the users inputted 
-     * first name, last name, email and phone.
-     * Supresses regular form submission.
-     */
     form.addEventListener('submit', (event) => {
         event.preventDefault();
         
@@ -30,7 +24,6 @@
         }
 
         form.style.minHeight = `${formHeight}px`;
-
         form.innerHTML= formSubmissionMessage(
         userInfo["contact-fname"], 
         userInfo["contact-lname"], 
