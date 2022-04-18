@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Teko&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins&family=Teko&display=swap');
 /* || General */
 :root {
   --main-colour: darkseagreen;
   --dark-main-colour: rgb(73, 141, 73); 
+  --transparent-main-colour: rgba(143, 188, 143, 0.568);
+
   --emphasis-colour: teal;
   --light-emphasis-colour: rgb(22, 165, 165);
+
   --light-colour: white;
+  --shadow-colour: rgba(100, 99, 99, 0.788);
+  --subtle-colour: lightgrey;
 }
 
 body {
@@ -63,19 +68,15 @@ section {
 
 .button {
   font-size: large;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
   border-radius: 1rem;
-  border: 2px solid;
+  border: 0.125rem solid;
 }
 
 .button:hover {
   background-color: var(--main-colour);
   color: var(--light-colour);
 }
-
 
 /* || Components */
 /* || Header */
@@ -141,7 +142,7 @@ nav ul a:hover {
 
 /* || Footer */
 footer {
-  background-color: lightgrey;
+  background-color: var(--subtle-colour);
   width: 100%;
 }
 
@@ -161,7 +162,7 @@ footer ul {
 .hero-section {
   justify-content: center;
   margin-top: 0;
-  background-image: url("../images/birds-eye-course.jpg");
+  background-image: url("../images/birds-eye-course-width1800px.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw;
@@ -169,24 +170,38 @@ footer ul {
   width: 100%;
 }
 
+.hero-section h2 {
+  margin: 0;
+  font-family: 'Patrick Hand', cursive;
+  text-align: center;
+  font-weight: normal;
+  color: black;
+  background-color: var(--main-colour);
+  width: 50%;
+}
+
 .hero-section .content-container {
   padding: 1rem;
   margin-top: auto;
   margin-bottom: auto;
-  width: 25vw;
-  height: 25vh;
-  display: block;
-  background-color: rgba(143, 188, 143, 0.644);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--main-colour);
+  border: 0.125rem solid var(--light-colour);
 }
 
 .hero-section a {
+  box-sizing: border-box;
   color: var(--light-colour);
-  margin: auto;
   background-image: linear-gradient(to top left, var(--emphasis-colour), 
     var(--light-emphasis-colour));
-  box-shadow: .2rem .2rem .2rem rgba(100, 99, 99, 0.8);
+  box-shadow: .2rem .2rem .2rem var(--shadow-colour);
   font-size: x-large;
-  width: 80%;
+  width: 50%;
   text-align: center;
 }
 
