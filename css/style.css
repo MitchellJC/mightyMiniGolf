@@ -155,6 +155,10 @@ footer ul {
   margin: 0;
 }
 
+footer a:hover {
+  font-style: italic;
+}
+
 /* || Pages */
 /* || Home Page */
 .home-section {
