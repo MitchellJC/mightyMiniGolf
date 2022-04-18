@@ -22,6 +22,12 @@ body {
 
 }
 
+h1 {
+  text-align: center;
+  background-color: var(--light-colour);
+  border: 0.125rem solid var(--main-colour);
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -257,7 +263,6 @@ footer a:hover {
 /* || Food and Drink Page */
 .menu {
   width: 100%;
-  border: 1px solid var(--main-colour);
 }
 
 /* || Contact Page */
