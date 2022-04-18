@@ -12,6 +12,8 @@
   --light-colour: white;
   --shadow-colour: rgba(100, 99, 99, 0.788);
   --subtle-colour: lightgrey;
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("../images/beanstalk.jpg");
-
+  
 }
 
 h1 {
@@ -49,6 +51,12 @@ form {
 
 form a {
   text-decoration: underline;
+}
+
+input[type=submit] {
+  margin-top: 1rem;
+  width: 50%;
+  background-color: var(--light-colour);
 }
 
 input[type=submit]:hover {
@@ -211,7 +219,7 @@ footer a:hover {
   border: 0.125rem solid var(--light-colour);
 }
 
-.hero-section a {
+.hero-book-button {
   box-sizing: border-box;
   color: var(--light-colour);
   background-image: linear-gradient(to top left, var(--emphasis-colour), 
@@ -222,14 +230,18 @@ footer a:hover {
   text-align: center;
 }
 
-.hero-section a:hover {
+.hero-book-button:hover {
   color: var(--main-colour);
   background-color: var(--light-colour);
   background-image: none;
 }
 
-.hero-section a:focus {
+.hero-book-button:focus {
   background-color: lightgrey;
+}
+
+.hero-more-link {
+  text-decoration: underline;
 }
 
 /* || About Page */
