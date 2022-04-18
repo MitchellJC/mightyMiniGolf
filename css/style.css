@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Teko&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins&family=Teko&display=swap');
+
 /* || General */
 :root {
   --main-colour: darkseagreen;
@@ -45,6 +45,10 @@ div {
 form {
   display: flex;
   flex-direction: column;
+}
+
+form a {
+  text-decoration: underline;
 }
 
 input[type=submit]:hover {
@@ -181,17 +185,16 @@ footer a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw;
-  height: 50vh;
+  height: 100vh;
   width: 100%;
 }
 
 .hero-section h2 {
   margin: 0;
-  font-family: 'Patrick Hand', cursive;
+  padding: 1rem;
   text-align: center;
-  font-weight: normal;
   color: black;
-  background-color: var(--main-colour);
+  border: 1px solid var(--dark-main-colour);
   width: 50%;
 }
 
@@ -281,5 +284,3 @@ table, th, tr, td{
   border: 1px solid;
   background-color: var(--light-colour);
 }
-
-
