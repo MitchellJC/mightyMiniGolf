@@ -10,7 +10,7 @@ const FOOTER_HTML =
   <li><a href="food.html">Food and Drink</a></li>
   <li><a href="terms.html">Terms and Conditions</a></li>
   <li><a href="about.html#faq-section">FAQs</a></li>
-  <li><a href="about.html#covid-section">Covid-10 Health and Safety</a></li>
+  <li><a href="about.html#covid-section">Covid-19 Health and Safety</a></li>
 </ul>
 </div>
 </footer>
