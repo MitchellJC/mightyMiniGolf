@@ -4,6 +4,7 @@
 :root {
   --main-colour: darkseagreen;
   --dark-main-colour: rgb(73, 141, 73); 
+  --greyed-main-colour: rgb(128, 168, 128);
   --transparent-main-colour: rgba(143, 188, 143, 0.568);
 
   --emphasis-colour: teal;
@@ -93,6 +94,10 @@ section {
 .button:hover {
   background-color: var(--main-colour);
   color: var(--light-colour);
+}
+
+.button:active {
+  background-color: var(--greyed-main-colour);
 }
 
 /* || Components */
@@ -236,7 +241,7 @@ footer a:hover {
   background-image: none;
 }
 
-.hero-book-button:focus {
+.hero-book-button:active {
   background-color: lightgrey;
 }
 
@@ -245,9 +250,20 @@ footer a:hover {
 }
 
 /* || About Page */
-#faq-list li h3 {
-  color: var(--dark-main-colour);
+#faq-list h3 {
+  padding: 1rem;
+  margin-bottom: 0;
+  background-image: linear-gradient(to bottom right, 
+    white, lightgrey);;
+  color: var(--emphasis-colour);
   user-select: none;
+  border: 1px solid var(--emphasis-colour);
+}
+
+#faq-list h3:hover {
+  background-image: linear-gradient(to bottom right, 
+    lightgrey, white);;
+  color: var(--emphasis-colour);
 }
 
 #faq-list li h3:hover {
