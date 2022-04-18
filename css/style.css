@@ -94,7 +94,8 @@ nav {
   margin-left: 2rem;
 }
 
-nav h1 {
+nav .logo-text {
+  font-weight: bold;
   margin-top: auto;
   margin-bottom: auto;
   font-family: "Teko", sans-serif;
