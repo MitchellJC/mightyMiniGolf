@@ -53,6 +53,7 @@ section {
 .content-container {
   margin-right: 20%;
   margin-left: 20%;
+
 }
 
 .section-text {
@@ -240,9 +241,15 @@ footer ul {
 }
 
 .answer-box-open {
-  /* Arbitrary large value, height will auto grow to full size*/
+  /* Arbitrary large value so height will auto grow to full size*/
   max-height: 20rem;
   transition: max-height 1s;
+}
+
+/* || Food and Drink Page */
+.menu {
+  width: 100%;
+  border: 1px solid var(--main-colour);
 }
 
 /* || Contact Page */

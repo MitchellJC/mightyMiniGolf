@@ -9,6 +9,7 @@ const FOOTER_HTML =
   <li><a href="contact.html">Contact Us</a></li>
   <li><a href="food.html">Food and Drink</a></li>
   <li><a href="terms.html">Terms and Conditions</a></li>
+  <li><a href="about.html#faq-section">FAQs</a></li>
 </ul>
 </div>
 </footer>
