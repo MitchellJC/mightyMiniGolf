@@ -196,7 +196,7 @@ footer a:hover {
   background-image: url("../images/birds-eye-course-width1800px.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100vw;
+  background-size: cover 100vw;
   height: 100vh;
   width: 100%;
 }
