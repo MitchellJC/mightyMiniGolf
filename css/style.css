@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Teko&display=swap");
 
-/* General */
+/* || General */
+:root {
+  --main-colour: darkseagreen;
+  --dark-main-colour: rgb(73, 141, 73); 
+  --emphasis-colour: teal;
+  --light-emphasis-colour: rgb(22, 165, 165);
+  --light-colour: white;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -23,14 +31,13 @@ div {
   padding: 0;
 }
 
-.content-container {
-  margin-right: 20%;
-  margin-left: 20%;
-}
-
 form {
   display: flex;
   flex-direction: column;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
 }
 
 section {
@@ -38,11 +45,16 @@ section {
   margin-bottom: 4rem;
 }
 
+.content-container {
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
 .section-text {
   padding: 1rem;
   margin-right: 1rem;
-  border: 1px solid darkseagreen;
-  background-color: white;
+  border: 1px solid var(--main-colour);
+  background-color: var(--light-colour);
 }
 
 .section-text p{
@@ -60,19 +72,18 @@ section {
 }
 
 .button:hover {
-  background-color: darkseagreen;
-  color: white;
+  background-color: var(--main-colour);
+  color: var(--light-colour);
 }
 
-input[type=submit]:hover {
-  cursor: pointer;
-}
 
-/* Header */
+/* || Components */
+/* || Header */
 nav {
   display: flex;
   justify-content: space-between;
-  background-image: linear-gradient(to bottom right, rgb(73, 141, 73), darkseagreen);
+  background-image: linear-gradient(to bottom right, 
+    var(--dark-main-colour), var(--main-colour));
   width: 100%;
 }
 
@@ -85,7 +96,7 @@ nav h1 {
   margin-top: auto;
   margin-bottom: auto;
   font-family: "Teko", sans-serif;
-  color: white;
+  color: var(--light-colour);
   font-size: xx-large;
 
   /* Simulates text stroke */
@@ -115,20 +126,20 @@ nav li {
 }
 
 nav ul a:hover {
-  color: aliceblue;
+  color: var(--light-colour);
   text-decoration: underline;
   text-decoration-thickness: 5px;
-  text-decoration-color: teal;
+  text-decoration-color: var(--emphasis-colour);
 }
 
 .current-page-link {
-  color: aliceblue;
+  color: var(--light-colour);
   text-decoration: underline;
   text-decoration-thickness: 5px;
-  text-decoration-color: teal;
+  text-decoration-color: var(--emphasis-colour);
 }
 
-/* Footer */
+/* || Footer */
 footer {
   background-color: lightgrey;
   width: 100%;
@@ -139,13 +150,14 @@ footer ul {
   margin: 0;
 }
 
-/* Home Page */
+/* || Pages */
+/* || Home Page */
 .home-section {
   display: flex;
   justify-content: space-between; 
 }
 
-/* Hero Section */
+/* || Hero Section */
 .hero-section {
   justify-content: center;
   margin-top: 0;
@@ -167,9 +179,10 @@ footer ul {
 }
 
 .hero-section a {
-  color: white;
+  color: var(--light-colour);
   margin: auto;
-  background-image: linear-gradient(to top left, teal, rgb(22, 165, 165));
+  background-image: linear-gradient(to top left, var(--emphasis-colour), 
+    var(--light-emphasis-colour));
   box-shadow: .2rem .2rem .2rem rgba(100, 99, 99, 0.8);
   font-size: x-large;
   width: 80%;
@@ -177,8 +190,8 @@ footer ul {
 }
 
 .hero-section a:hover {
-  color: darkseagreen;
-  background-color: white;
+  color: var(--main-colour);
+  background-color: var(--light-colour);
   background-image: none;
 }
 
@@ -186,9 +199,10 @@ footer ul {
   background-color: lightgrey;
 }
 
-/* About Page */
+/* || About Page */
 #faq-list li h3 {
-  color: rgb(42, 112, 42);
+  color: var(--dark-main-colour);
+  user-select: none;
 }
 
 #faq-list li h3:hover {
@@ -200,8 +214,7 @@ footer ul {
   overflow: hidden;
   height: auto;
   max-height: 0;
-  transition: max-height 1s;
-  transition-timing-function: linear;
+  transition: max-height 0.25s;
   transition-delay: 0;
 }
 
@@ -211,16 +224,17 @@ footer ul {
 }
 
 .answer-box-open {
-  /* Arbitrary large value */
+  /* Arbitrary large value, height will auto grow to full size*/
   max-height: 20rem;
+  transition: max-height 1s;
 }
 
-/* Contact Page */
+/* || Contact Page */
 .contact-submit-list li b{
   text-align: right;
 }
 
-/* Booking Page */
+/* || Booking Page */
 table {
   width: 100%;
 }
@@ -229,7 +243,7 @@ table, th, tr, td{
   text-align: center;
   border-collapse: collapse;
   border: 1px solid;
-  background-color: white;
+  background-color: var(--light-colour);
 }
 
 
