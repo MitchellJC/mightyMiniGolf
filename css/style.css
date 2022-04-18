@@ -170,11 +170,12 @@ footer ul {
 }
 
 .hero-section .content-container {
+  padding: 1rem;
   margin-top: auto;
   margin-bottom: auto;
   width: 25vw;
   height: 25vh;
-  display: flex;
+  display: block;
   background-color: rgba(143, 188, 143, 0.644);
 }
 
