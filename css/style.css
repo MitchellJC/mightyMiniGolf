@@ -147,6 +147,7 @@ nav ul {
 }
 
 nav li {
+  text-align: center;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 1rem;
@@ -165,6 +166,28 @@ nav ul a:hover {
   text-decoration: underline;
   text-decoration-thickness: 5px;
   text-decoration-color: var(--emphasis-colour);
+}
+
+.burger-menu {
+  display: none;
+  margin: 1rem 3rem;
+}
+
+.burger-menu div {
+  margin-bottom: 5px;
+  width: 40px;
+  height: 5px;
+  background-color: black;
+}
+
+@media only screen and (max-width: 720px) {
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
 }
 
 /* || Footer */
