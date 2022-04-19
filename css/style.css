@@ -45,6 +45,10 @@ div {
   padding: 0;
 }
 
+img {
+  margin: auto;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -185,8 +189,16 @@ footer a:hover {
 /* || Home Page */
 .home-section {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
+  align-items: center; 
   gap: 1rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4rem;
+  margin: 4rem 0 4rem 0;
 }
 
 /* || Hero Section */
