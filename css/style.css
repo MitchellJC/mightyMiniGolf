@@ -237,6 +237,11 @@ footer a:hover {
 @media only screen and (max-width: 1000px) {
   .home-grid {
     grid-template-columns: auto;
+    gap: 0;
+  }
+
+  picture {
+    margin: 1rem auto 4rem auto;
   }
 }
 
