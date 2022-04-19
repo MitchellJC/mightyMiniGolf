@@ -106,6 +106,13 @@ section {
   background-color: var(--greyed-main-colour);
 }
 
+@media only screen and (max-width: 426px) {
+  .content-container {
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+}
+
 /* || Components */
 /* || Header */
 nav {
@@ -172,7 +179,7 @@ nav ul a:hover {
 
 .burger-menu {
   display: none;
-  margin: 1rem 3rem;
+  margin: auto 3rem auto;
 }
 
 .burger-menu div {
@@ -202,6 +209,7 @@ footer ul {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: auto auto auto auto auto auto;
+  align-items: center;
   padding: 1rem 1rem 1rem 1rem;
   margin: 0;
 }
@@ -257,7 +265,7 @@ footer a:hover {
   padding: 1rem;
   margin-top: auto;
   margin-bottom: auto;
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
