@@ -89,6 +89,8 @@ section {
 }
 
 .button {
+  text-align: center;
+  display: block;
   font-size: large;
   padding: 0.5rem 2rem 0.5rem 2rem;
   border-radius: 1rem;
