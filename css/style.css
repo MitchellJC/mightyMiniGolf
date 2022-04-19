@@ -45,7 +45,7 @@ div {
   padding: 0;
 }
 
-img {
+picture {
   margin: auto;
 }
 
@@ -199,6 +199,12 @@ footer a:hover {
   grid-template-columns: auto auto;
   gap: 4rem;
   margin: 4rem 0 4rem 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-grid {
+    grid-template-columns: auto;
+  }
 }
 
 /* || Hero Section */
