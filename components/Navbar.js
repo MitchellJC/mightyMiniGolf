@@ -7,6 +7,12 @@ const NAVBAR_HTML =
     <span class="logo-text">Mighty Mini Golf</span>
   </a>
 
+  <div class="burger-menu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
   <ul>
     <li><a id="about-link" href="about.html"><h4>About</h4></a></li>
     <li><a id="food-link" href="food.html"><h4>Food and Drink</h4></a></li>

@@ -45,6 +45,10 @@ div {
   padding: 0;
 }
 
+picture {
+  margin: auto;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -112,7 +116,7 @@ nav {
 
 .home-link {
   display: flex;
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 nav .logo-text {
@@ -143,6 +147,7 @@ nav ul {
 }
 
 nav li {
+  text-align: center;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 1rem;
@@ -161,6 +166,28 @@ nav ul a:hover {
   text-decoration: underline;
   text-decoration-thickness: 5px;
   text-decoration-color: var(--emphasis-colour);
+}
+
+.burger-menu {
+  display: none;
+  margin: 1rem 3rem;
+}
+
+.burger-menu div {
+  margin-bottom: 5px;
+  width: 40px;
+  height: 5px;
+  background-color: black;
+}
+
+@media only screen and (max-width: 720px) {
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
 }
 
 /* || Footer */
@@ -185,8 +212,22 @@ footer a:hover {
 /* || Home Page */
 .home-section {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
+  align-items: center; 
   gap: 1rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4rem;
+  margin: 4rem 0 4rem 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-grid {
+    grid-template-columns: auto;
+  }
 }
 
 /* || Hero Section */
