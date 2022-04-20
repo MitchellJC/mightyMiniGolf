@@ -206,13 +206,16 @@ nav ul a:hover {
 footer {
   background-color: var(--subtle-colour);
   width: 100%;
-  padding: 1rem;
 }
 
 footer ul {
   margin: 0;
   display: flex;
   gap: 2rem;
+}
+
+footer ul div {
+  padding: 1rem;
 }
 
 footer a:hover {
