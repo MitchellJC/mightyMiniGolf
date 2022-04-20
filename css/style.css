@@ -31,6 +31,10 @@ h1 {
   border: 1px solid var(--main-colour);
 }
 
+h4 {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -116,6 +120,7 @@ section {
 /* || Components */
 /* || Header */
 nav {
+  height: 6rem;
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(to bottom right, 
@@ -124,8 +129,8 @@ nav {
 }
 
 .home-link {
+  margin-left: 1rem;
   display: flex;
-  margin-left: 3rem;
 }
 
 nav .logo-text {
@@ -148,9 +153,7 @@ nav .logo-text {
 }
 
 nav ul {
-  margin-right: 2rem;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 1rem 0 0;
   display: flex;
   font-size: large;
 }
@@ -189,7 +192,7 @@ nav ul a:hover {
   background-color: black;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 730px) {
   .burger-menu {
     display: block;
   }
@@ -203,15 +206,13 @@ nav ul a:hover {
 footer {
   background-color: var(--subtle-colour);
   width: 100%;
+  padding: 1rem;
 }
 
 footer ul {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: auto auto auto auto auto auto;
-  align-items: center;
-  padding: 1rem 1rem 1rem 1rem;
   margin: 0;
+  display: flex;
+  gap: 2rem;
 }
 
 footer a:hover {
