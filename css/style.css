@@ -206,16 +206,28 @@ nav ul a:hover {
 footer {
   background-color: var(--subtle-colour);
   width: 100%;
+  height: auto;
 }
 
-footer ul {
+.page-list {
+  height: 10rem;
   margin: 0;
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: "> ";
 }
 
-footer ul div {
-  padding: 1rem;
+.page-list ul {
+  list-style: "- ";
+}
+
+.page-list ul li{
+  margin-left: 1rem;
+}
+
+.footer-page {
+  font-weight: bold;
 }
 
 footer a:hover {

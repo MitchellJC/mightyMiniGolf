@@ -2,19 +2,32 @@ const FOOTER_HTML =
 `
 <footer>
 <div class="content-container">
-<ul>
-  <div>
-    <li><a href="index.html">Home Page</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="book.html">Book</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
+<ul class="page-list">
+    <li>
+      <ul>
+        <a class="footer-page" href="index.html">Home Page</a>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <a class="footer-page" href="about.html">About Us</a>
+        <li><a href="about.html#faq-section">FAQs</a></li>
+        <li><a href="about.html#covid-section">Covid-19 Health and Safety</a></li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <a class="footer-page" href="book.html">Book</a>
+      </ul>
+    </li>
+    <li>
+      <ul>
+      <a class="footer-page" href="contact.html">Contact Us</a>
+      </ul>
+    </li>
     <li><a href="food.html">Food and Drink</a></li>
     <li><a href="terms.html">Terms and Conditions</a></li>
-  </div>
-  <div>
-    <li><a href="about.html#faq-section">FAQs</a></li>
-    <li><a href="about.html#covid-section">Covid-19 Health and Safety</a></li>
-  </div>
+    
 </ul>
 </div>
 </footer>
