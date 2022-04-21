@@ -58,6 +58,11 @@ form {
   flex-direction: column;
 }
 
+textarea {
+  font-family: "Poppins", sans-serif;
+  resize: vertical;
+}
+
 form a {
   text-decoration: underline;
 }
@@ -70,6 +75,11 @@ input[type=submit] {
 
 input[type=submit]:hover {
   cursor: pointer;
+}
+
+input[type=number] {
+  width: 1rem;
+  text-align: right;
 }
 
 section {
@@ -411,4 +421,9 @@ table, th, tr, td{
   border-collapse: collapse;
   border: 1px solid;
   background-color: var(--light-colour);
+}
+
+.form-tickets label {
+  padding-left: 1rem;
+  display: block;
 }

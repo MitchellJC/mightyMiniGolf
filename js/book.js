@@ -2,7 +2,8 @@
     const form = document.getElementById("book-form");
     const formHeight = form.getBoundingClientRect()["height"];
     const formSubmissionMessage = (firstName, lastName, email, phone, date,
-        time, type, holes, laserTag) =>   
+        time, adultTickets, childTickets, concessionTickets, 
+        partyTickets, holes, laserTag) =>   
     `<p>
     Thank you for booking with us ${firstName}. Please review your booking
     details below. 
@@ -15,7 +16,10 @@
     <li><b>Your Phone:</b> ${phone}</li>
     <li><b>Date:</b> ${date}</li>
     <li><b>Time:</b> ${time}</li>
-    <li><b>Booking Type:</b> ${type}</li>
+    <li><b>Adult Tickets:</b> ${adultTickets}</li>
+    <li><b>Child Tickets:</b> ${childTickets}</li>
+    <li><b>Concession Tickets:</b> ${concessionTickets}</li>
+    <li><b>Party Tickets:</b> ${partyTickets}</li>
     <li><b>Holes:</b> ${holes}</li>
     <li><b>Laser Tag:</b> ${laserTag}</li>
     </ul>`;
@@ -37,7 +41,10 @@
         userInfo["book-phone"],
         userInfo["book-date"],
         userInfo["book-time"],
-        userInfo["book-type"],
+        userInfo["adult-tickets"],
+        userInfo["child-tickets"],
+        userInfo["concession-tickets"],
+        userInfo["party-tickets"],
         userInfo["book-holes"],
         userInfo["book-laser"]);
     });

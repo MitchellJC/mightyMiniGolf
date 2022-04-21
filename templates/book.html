@@ -94,13 +94,29 @@
                     <input type="date" id="book-date" name="book-date" required>
                     <label for="book-time">Time to Book:</label>
                     <input type="time" id="book-time" name="book-time" required>
-                    <label for="book-type">Booking Type:</label>
-                    <select id="book-type" name="book-type" required>
-                        <option value="Adult">Adult</option>
-                        <option value="Adult">Child</option>
-                        <option value="Adult">Concession</option>
-                        <option value="Adult">Party Pack</option>
-                    </select>
+                    <div class="form-tickets">
+                        Tickets:
+                        <label for="adult-tickets">
+                            Adult:
+                            <input type="number" id="adult-tickets" name="adult-tickets" step="1" value="0"
+                            min="0" max="99" > 
+                        </label>
+                        <label for="child-tickets">
+                            Child:
+                            <input type="number" id="child-tickets" name="child-tickets" step="1" value="0"
+                            min="0" max="99" > 
+                        </label>
+                        <label for="concession-tickets">
+                            Concession:
+                            <input type="number" id="concession-tickets" name="child-tickets" step="1" value="0"
+                            min="0" max="99" > 
+                        </label>
+                        <label for="party-tickets">
+                            Party Pack:
+                            <input type="number" id="party-tickets" name="party-tickets" step="1" value="0"
+                            min="0" max="99" > 
+                        </label>
+                    </div>
                     <label for="book-holes">Number of Holes to Play:</label>
                     <select id="book-holes" name="book-holes" required>
                         <option value="None">None</option>
