@@ -133,7 +133,7 @@ nav {
   display: flex;
 }
 
-nav .logo-text {
+.logo-text {
   font-weight: bold;
   margin-top: auto;
   margin-bottom: auto;
@@ -206,22 +206,51 @@ nav ul a:hover {
 footer {
   background-color: var(--subtle-colour);
   width: 100%;
-  height: auto;
+  min-height: 20rem;
+}
+
+.padding-div {
+  padding: 1rem;
+}
+
+.footer-information-box {
+  margin-bottom: 4rem;
+}
+
+.footer-information-box a {
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.footer-information-box a:hover {
+  font-style: normal;
+}
+
+.footer-information {
+  margin: 0;
+  font-style: italic;
+  font-size: small;
+}
+
+.author-information {
+  width: fit-content;
+  margin: 1rem auto 1rem auto;
 }
 
 .page-list {
-  height: 10rem;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
+  gap: 1rem;
   flex-wrap: wrap;
+}
+
+.page-list li {
+  flex: 1 1 0px;
+
+}
+.page-list ul {
   list-style: "> ";
 }
-
-.page-list ul {
-  list-style: "- ";
-}
-
 .page-list ul li{
   margin-left: 1rem;
 }
