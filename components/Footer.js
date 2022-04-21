@@ -1,7 +1,7 @@
 const FOOTER_HTML = 
 `
 <footer>
-<div class="content-container">
+  <div class="content-container">
   <div class="padding-div">
     <div class="footer-information-box">
       <a class="home-link" href="index.html">
@@ -55,7 +55,7 @@ const FOOTER_HTML =
     </ul>
     <p class="footer-information author-information">| Website made by Mitchell Clark |</p>
   </div>
-</div>
+  </div>
 </footer>
 `;
 
