@@ -3,6 +3,7 @@
 /* || General */
 :root {
   --main-colour: darkseagreen;
+  --darker-main-colour: rgb(119, 158, 119);
   --dark-main-colour: rgb(73, 141, 73); 
   --greyed-main-colour: rgb(128, 168, 128);
   --transparent-main-colour: rgba(143, 188, 143, 0.568);
@@ -181,6 +182,10 @@ nav ul a:hover {
   text-decoration: underline;
   text-decoration-thickness: 5px;
   text-decoration-color: var(--emphasis-colour);
+}
+
+nav ul a {
+  color: rgb(94, 61, 55);
 }
 
 .current-page-link {
@@ -414,13 +419,25 @@ footer a:hover {
 /* || Booking Page */
 table {
   width: 100%;
+  
 }
 
 table, th, tr, td{
+  padding: 1rem;
   text-align: center;
   border-collapse: collapse;
-  border: 1px solid;
-  background-color: var(--light-colour);
+  border: 1px solid var(--light-colour);
+  color: var(--light-colour);
+  
+}
+
+th {
+  
+  background-color: var(--dark-main-colour);
+}
+
+td {
+  background-color: var(--darker-main-colour);
 }
 
 .form-tickets label {
