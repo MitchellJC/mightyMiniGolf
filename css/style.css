@@ -8,12 +8,14 @@
   --greyed-main-colour: rgb(128, 168, 128);
   --transparent-main-colour: rgba(143, 188, 143, 0.568);
 
+  --nav-colour: rgb(94, 61, 55);
   --emphasis-colour: teal;
   --light-emphasis-colour: rgb(22, 165, 165);
 
   --light-colour: white;
   --shadow-colour: rgba(100, 99, 99, 0.788);
   --subtle-colour: lightgrey;
+  --dark-subtle-colour: rgb(184, 183, 183);
 
   scroll-behavior: smooth;
 }
@@ -185,7 +187,7 @@ nav ul a:hover {
 }
 
 nav ul a {
-  color: rgb(94, 61, 55);
+  color: var(--nav-colour);
 }
 
 .current-page-link {
@@ -427,17 +429,14 @@ table, th, tr, td{
   text-align: center;
   border-collapse: collapse;
   border: 1px solid var(--light-colour);
-  color: var(--light-colour);
-  
 }
 
 th {
-  
-  background-color: var(--dark-main-colour);
+  background-color: var(--dark-subtle-colour);
 }
 
 td {
-  background-color: var(--darker-main-colour);
+  background-color: var(--subtle-colour);
 }
 
 .form-tickets label {
