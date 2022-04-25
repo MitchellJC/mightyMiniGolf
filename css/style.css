@@ -25,7 +25,6 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("../images/beanstalk.jpg");
-  
 }
 
 h1 {
@@ -216,6 +215,16 @@ nav ul a {
 
   nav ul {
     display: none;
+  }
+
+  .nav-links-open {
+    box-sizing: border-box;
+    padding: 1rem;
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 6rem;
+    background-color: var(--main-colour);
   }
 }
 
@@ -421,7 +430,7 @@ footer a:hover {
 /* || Booking Page */
 table {
   width: 100%;
-  
+  overflow-x: scroll;
 }
 
 table, th, tr, td{
