@@ -8,9 +8,9 @@ const NAVBAR_HTML =
   </a>
 
   <div id="burger-menu" class="burger-menu">
-    <div></div>
-    <div></div>
-    <div></div>
+    <div id="burger-menu-line-1" class="burger-menu-line-1"></div>
+    <div id="burger-menu-line-2" class="burger-menu-line-2"></div>
+    <div id="burger-menu-line-3" class="burger-menu-line-3"></div>
   </div>
 
   <ul id="nav-links">

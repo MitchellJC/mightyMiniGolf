@@ -122,6 +122,14 @@ section {
   background-color: var(--greyed-main-colour);
 }
 
+iframe {
+  height: 50vh;
+}
+
+.x-scroll {
+  overflow-x: scroll;
+}
+
 @media only screen and (max-width: 426px) {
   .content-container {
     margin-right: 2.5%;
@@ -209,6 +217,80 @@ nav ul a {
 }
 
 @media only screen and (max-width: 730px) {
+  .burger-menu div {
+    position: relative;
+  }
+
+  /* Animations to turn hamburger menu into an X */
+  @keyframes line1-to-middle {
+    from {top: 0rem;}
+    to {top: 0.6rem;}
+  }
+
+  @keyframes line1-rotate {
+    from {transform: rotate(0deg); top: 0.6rem;}
+    to {transform: rotate(45deg); top: 0.6rem;}
+  }
+
+  @keyframes line2-rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-45deg);}
+  }
+
+  @keyframes line3-to-middle {
+    from {bottom: 0rem;}
+    to {bottom: 0.6rem;}
+  }
+
+  @keyframes line3-rotate {
+    from {transform: rotate(0deg); bottom: 0.6rem}
+    to {transform: rotate(45deg); bottom: 0.6rem;}
+  }
+
+  .line-1-to-x {
+    animation-name: line1-to-middle, line1-rotate;
+    animation-delay: 0s, 0.25s;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+  }
+
+  .line-2-to-x {
+    animation: line2-rotate 0.25s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+  }
+
+  .line-3-to-x {
+    animation-name: line3-to-middle, line3-rotate;
+    animation-delay: 0s, 0.25s;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+  }
+
+  .line-1-to-burger {
+    
+    animation-name: line1-to-middle, line1-rotate;
+    animation-delay: 0.25s, 0s;
+    animation-duration: 0.25s;
+    animation-fill-mode: backwards;
+    animation-direction: reverse;
+  }
+
+  .line-2-to-burger {
+    animation: line2-rotate 0.25s;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+    animation-direction: reverse;
+  }
+
+  .line-3-to-burger {
+    animation-name: line3-to-middle, line3-rotate ;
+    animation-delay: 0.25s, 0s;
+    animation-duration: 0.25s;
+    animation-fill-mode: backwards;
+    animation-direction: reverse;
+  }
+
   .burger-menu {
     display: block;
   }
@@ -431,6 +513,7 @@ footer a:hover {
 table {
   width: 100%;
   overflow-x: scroll;
+  table-layout: auto;
 }
 
 table, th, tr, td{
