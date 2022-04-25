@@ -14,10 +14,10 @@ const NAVBAR_HTML =
   </div>
 
   <ul id="nav-links">
-    <li><a id="about-link" href="about.html"><h4>About</h4></a></li>
-    <li><a id="food-link" href="food.html"><h4>Food and Drink</h4></a></li>
-    <li><a id="contact-link" href="contact.html"><h4>Contact</h4></a></li>
-    <li><a id="book-link" href="book.html"><h4>Book</h4></a></li>
+    <li><a id="about-link" href="about.html"><span class="nav-text">About</span></a></li>
+    <li><a id="food-link" href="food.html"><span class="nav-text">Food and Drink</span></a></li>   
+    <li><a id="contact-link" href="contact.html"><span class="nav-text">Contact</span></a></li>
+    <li><a id="book-link" href="book.html"><span class="nav-text">Book</span></a></li>
   </ul>
 </nav>
 </header>

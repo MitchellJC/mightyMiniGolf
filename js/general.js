@@ -17,8 +17,6 @@
             burgerMenuLine1.classList.add("line-1-to-burger");
             burgerMenuLine2.classList.add("line-2-to-burger");
             burgerMenuLine3.classList.add("line-3-to-burger");
-            
-            
         } else {
             navLinks.classList.add("nav-links-open");
             
@@ -30,7 +28,6 @@
             burgerMenuLine1.classList.add("line-1-to-x");
             burgerMenuLine2.classList.add("line-2-to-x");
             burgerMenuLine3.classList.add("line-3-to-x");
-            
         }
     });
 })();
