@@ -19,6 +19,7 @@ const NAVBAR_HTML =
     <li><a id="contact-link" href="contact.html"><span class="nav-text">Contact</span></a></li>
     <li><a id="book-link" href="book.html"><span class="nav-text">Book</span></a></li>
   </ul>
+  
 </nav>
 </header>
 `;

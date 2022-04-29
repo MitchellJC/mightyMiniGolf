@@ -52,15 +52,19 @@ div {
   padding: 0;
 }
 
-picture {
-  margin: auto;
-}
-
 img {
   max-width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+picture {
+  margin: auto;
+}
+
+picture img {
+  max-width: 100%;
 }
 
 form {
@@ -152,7 +156,7 @@ nav {
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(to bottom right, 
-    var(--dark-main-colour), var(--main-colour));
+    var(--dark-main-colour), var(--main-colour)); 
   width: 100%;
 }
 
@@ -171,7 +175,7 @@ nav {
 
   /* Simulates text stroke */
   text-shadow: .1rem .1rem black, -.1rem -.1rem black, 
-  .1rem -.1rem black, -.1rem .1rem black;
+  .1rem -.1rem black, -.1rem .1rem rgb(145, 96, 96);
 }
 
 .home-logo {
@@ -193,7 +197,6 @@ nav li {
   margin-bottom: auto;
   margin-left: 1rem;
   margin-right: 1rem;
- 
 }
 
 .nav-text {
@@ -201,7 +204,7 @@ nav li {
   font-weight: bold;
   font-size: large;
   color: rgb(255, 255, 255);
-  text-shadow: .1rem .1rem black;
+  text-shadow: .1rem .1rem var(--dark-main-colour);
 }
 
 nav ul a:hover {
@@ -327,6 +330,11 @@ nav ul a {
     background-color: var(--main-colour);
     max-height: 0;
     transition: max-height 1s;
+  }
+
+  nav li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .nav-links-open {
