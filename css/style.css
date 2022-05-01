@@ -55,8 +55,7 @@ div {
 img {
   max-width: 80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto 2rem auto;
 }
 
 picture {
@@ -112,9 +111,7 @@ section {
   background-color: var(--light-colour);
 }
 
-.section-text p{
-  margin-bottom: 2rem;
-}
+
 
 .button {
   text-align: center;
