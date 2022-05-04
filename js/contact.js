@@ -18,7 +18,7 @@
     form.addEventListener('submit', (event) => {
         event.preventDefault();
         
-        /** Collect form information into dictionary */
+        // Collect form information into dictionary 
         let userInfo = {};
         for (field of form.elements) {
             userInfo[field.id] = field.value;

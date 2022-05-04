@@ -51,10 +51,7 @@ class Navbar extends HTMLElement {
       } else if (pageUrl.includes("book")) {
         document.getElementById("book-link").classList.add("current-page-link");
       }
-      
-      
     }
-
   }
 
   customElements.define('navbar-component', Navbar);
