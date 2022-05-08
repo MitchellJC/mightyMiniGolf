@@ -25,28 +25,31 @@ const FOOTER_HTML =
         <li>
           <a class="footer-page" href="about.html">About Us</a>
           <ul>
-            <li><a href="about.html#faq-section">FAQs</a></li>
-            <li><a href="about.html#covid-section">Covid-19 Health and Safety</a></li>
+            <li><a href="about.html#about-text-anchor">What We are About</a></li>
+            <li><a href="about.html#our-location-anchor">Our Location</a></li>
+            <li><a href="about.html#FAQ-anchor">FAQs</a></li>
+            <li><a href="about.html#about-covid-anchor">Covid-19 Health and Safety</a></li>
           </ul>
         </li>
         <li>
           <a class="footer-page" href="food.html">Food and Drink</a>
           <ul>
-            <li><a href="food.html#menu-section">Our Menu</a></li>
+            <li><a href="food.html#food-bar-anchor">Our Food Bar</a></li>
+            <li><a href="food.html#menu-anchor">Our Menu</a></li>
           </ul>
         </li>
         <li>
           <a class="footer-page" href="contact.html">Contact Us</a>
           <ul>
-            <li><a href="contact.html#message-section">Send Us a Message</a></li>
-            <li><a href="contact.html#alt-contact-section">Alternative Ways to Contact Us</a></li>
+            <li><a href="contact.html#message-anchor">Send Us a Message</a></li>
+            <li><a href="contact.html#alt-contact-anchor">Alternative Ways to Contact Us</a></li>
           </ul>
         </li>
         <li>
           <a class="footer-page" href="book.html">Book</a>
           <ul>
-          <li><a href="book.html#price-section">Our Prices</a></li>
-          <li><a href="book.html#book-now-section">Book Now</a></li>
+          <li><a href="book.html#price-anchor">Our Prices</a></li>
+          <li><a href="book.html#book-anchor">Book Now</a></li>
           </ul>
         </li>
         <li>

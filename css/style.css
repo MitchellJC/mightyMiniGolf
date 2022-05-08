@@ -18,6 +18,8 @@
   --subtle-colour: lightgrey;
   --dark-subtle-colour: rgb(184, 183, 183);
 
+  --header-height: 6rem;
+
   scroll-behavior: smooth;
 }
 
@@ -41,6 +43,13 @@ h4 {
 a {
   text-decoration: none;
   color: black;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: calc(-1 * var(--header-height) - 1rem);
+  visibility: hidden;
 }
 
 ul {
@@ -71,10 +80,23 @@ picture img {
 form {
   display: flex;
   flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: medium;
+}
+
+input {
+  font-size: medium;
+  padding: 0.5rem;
 }
 
 textarea {
   font-family: "Poppins", sans-serif;
+  padding: 0.5rem;
+  font-size: medium;
   resize: vertical;
 }
 
@@ -150,8 +172,13 @@ iframe {
 
 /* || Components */
 /* || Header */
+header {
+  position: sticky;
+  top: 0;
+}
+
 nav {
-  height: 6rem;
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(to bottom right, 
@@ -438,7 +465,7 @@ footer a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover 100vw;
-  height: 100vh;
+  height: calc(100vh - var(--header-height));
   width: 100%;
 }
 
