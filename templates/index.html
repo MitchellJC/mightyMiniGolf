@@ -13,6 +13,7 @@
     <script src="../components/Footer.js" type="text/javascript" defer></script>
 
     <script src="../js/general.js" type="text/javascript" defer></script>
+    <script src="../js/index.js" type="text/javascript" defer></script>
   </head>
 
   <body>
@@ -29,7 +30,44 @@
     <div class="content-container">
       <a class="anchor" id="home-more-anchor"></a>
       <h1 id="home-title">Home</h1>
-      <div class="photo-slideshow"></div>
+      <div class="photo-slideshow">
+        <div id="left-slideshow-arrow" class="arrow left-arrow">&lt</div>
+
+        <div class="photo-container">
+        <img
+          class="slideshow-photo"
+          src="../images/courses/course1.jpg"
+          alt="Picture of mini golf course."
+        />
+
+        <img
+          class="slideshow-photo hidden"
+          src="../images/courses/course2.jpg"
+          alt="Picture of mini golf course."
+        />
+
+        <img
+          class="slideshow-photo hidden"
+          src="../images/courses/course3.jpg"
+          alt="Picture of mini golf course."
+        />
+
+        <img
+          class="slideshow-photo hidden"
+          src="../images/courses/course4.jpg"
+          alt="Picture of mini golf course."
+        />
+
+        <div class="slideshow-dots">
+          <span class="slideshow-dot">&#9898</span>
+          <span class="slideshow-dot">&#9899</span>
+          <span class="slideshow-dot">&#9899</span>
+          <span class="slideshow-dot">&#9899</span>
+        </div>
+        </div>
+
+        <div id="right-slideshow-arrow" class="arrow right-arrow">&gt</div>
+      </div>
       <div class="home-grid">
         <div class="section-text">
           <h2>What We are About</h2>
