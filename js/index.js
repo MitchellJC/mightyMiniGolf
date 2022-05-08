@@ -38,6 +38,13 @@
         currentImage.classList.remove("hidden"); 
     }
 
+    /**
+     * Resets the time of the auto slideshow event corresponding to
+     * the given id. Returns the id of the reset auto slideshow event.
+     * 
+     * @param {number} autoSlideShowEvent - Auto slide show event id to reset.
+     * @returns {number} New auto slide show event id.
+     */
     function resetSlideShowTime(autoSlideShowEvent) {
         clearInterval(autoSlideShowEvent);
         newAutoSlideShowEvent = setInterval(() => {changeSlideShowImage(currentImageNum + 1)}, 
