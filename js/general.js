@@ -13,7 +13,7 @@
             burgerMenuLine1.classList.remove("line-1-to-x");
             burgerMenuLine2.classList.remove("line-2-to-x");
             burgerMenuLine3.classList.remove("line-3-to-x");
-            burgerMenuLine1.offsetHeight; // trigger reflow 
+            burgerMenuLine1.offsetHeight; // trigger reflow of page layout
             burgerMenuLine1.classList.add("line-1-to-burger");
             burgerMenuLine2.classList.add("line-2-to-burger");
             burgerMenuLine3.classList.add("line-3-to-burger");
