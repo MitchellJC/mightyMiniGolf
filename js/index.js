@@ -1,7 +1,7 @@
 (function(){
     const UNSELECTED_DOT = "&#9899";
     const SELECTED_DOT = "&#9898";
-    const SLIDESHOW_CHANGE_PERIOD =  10000;
+    const SLIDESHOW_CHANGE_PERIOD =  7000;
 
     const leftSlideshowArrow = document.getElementById("left-slideshow-arrow");
     const rightSlideshowArrow = document.getElementById("right-slideshow-arrow");
