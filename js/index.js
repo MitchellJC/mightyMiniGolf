@@ -3,10 +3,19 @@
     const SELECTED_DOT = "&#9898";
     const SLIDESHOW_CHANGE_PERIOD =  7000;
 
+    // Slideshow
     const leftSlideshowArrow = document.getElementById("left-slideshow-arrow");
     const rightSlideshowArrow = document.getElementById("right-slideshow-arrow");
     const dots = document.getElementsByClassName("slideshow-dot");
     const slideshowImages = document.getElementsByClassName("slideshow-photo");
+
+    // Ball interaction
+    const ball = document.getElementById("ball");
+
+    const ballRolling = [
+        { transform: 'rotate(0) scale(1)' },
+        { transform: 'rotate(360deg) scale(0)' }
+      ];
 
     /** Changes the current image on the slideshow to the 
      * image corresponding to imageNum.
@@ -52,6 +61,7 @@
         return newAutoSlideShowEvent;
     }
 
+    // || Slide Show Logic
     let currentImageNum = 0;
     let autoSlideShowEvent = setInterval(() => {changeSlideShowImage(currentImageNum + 1)}, 
         SLIDESHOW_CHANGE_PERIOD);
@@ -73,5 +83,12 @@
     rightSlideshowArrow.addEventListener("click", () => {
         autoSlideShowEvent = resetSlideShowTime(autoSlideShowEvent);
         changeSlideShowImage(currentImageNum + 1);
+    });
+
+    // || Ball interaction logic
+
+
+    ball.addEventListener("click", () => {
+        ball.animate(ballRolling);
     });
 })();

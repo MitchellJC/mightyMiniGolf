@@ -179,63 +179,6 @@ iframe {
   }
 }
 
-/* || Photo Slideshows */
-.photo-slideshow {
-  margin: 4rem 0 4rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.arrow {
-  border: 1px solid var(--main-colour);
-  background-color: var(--main-colour);
-  /* background-image: var(--); */
-  color: white;
-  font-size:xx-large;
-  padding: 2rem 0.5rem 2rem 0.5rem;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-}
-
-.arrow:active {
-  background-color: rgb(218, 212, 212);
-  background-image: var(--emphasis-grad-clicked);
-}
-
-.left-arrow {
-  left: 1px;
-}
-
-.right-arrow {
-  right: 1px;
-}
-
-.photo-container {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-}
-
-.photo-slideshow img {
-  border: 1px solid var(--main-colour);
-  max-width: 100%;
-  margin: 0;
-}
-
-.slideshow-dots {
-  justify-content: center;
-  display: flex;
-  position: relative;
-  margin-top: -2rem;
-}
-
-.slideshow-dot {
-  cursor: pointer;
-  user-select: none;
-}
-
 /* || Components */
 /* || Header */
 header {
@@ -583,6 +526,104 @@ footer a:hover {
 
 .hero-more-link {
   text-decoration: underline;
+}
+
+/* || Photo Slideshows */
+.photo-slideshow {
+  margin: 4rem 0 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  border: 1px solid var(--main-colour);
+  background-color: var(--main-colour);
+  /* background-image: var(--); */
+  color: white;
+  font-size:xx-large;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow:active {
+  background-color: rgb(218, 212, 212);
+  background-image: var(--emphasis-grad-clicked);
+}
+
+.left-arrow {
+  left: 1px;
+}
+
+.right-arrow {
+  right: 1px;
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.photo-slideshow img {
+  border: 1px solid var(--main-colour);
+  max-width: 100%;
+  margin: 0;
+}
+
+.slideshow-dots {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  margin-top: -2rem;
+}
+
+.slideshow-dot {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* || Home Ball Animation */
+#home-ball-animation-container {
+  display: flex;
+  padding: 4rem 0 4rem 0;
+}
+
+.ball{
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom left, white 60%, rgb(139, 139, 139));
+  cursor: pointer;
+  
+  position: relative;
+  margin-right: -60px;
+  margin-top: -63px;
+}
+
+.grass-left-of-hole {
+  width: 100%;
+  flex: 1;
+  height: 20px;
+  border-top: 1px solid var(--main-colour);
+}
+
+.hole {
+  width: 80px;
+  height: 100px;
+  border-left: 1px solid var(--main-colour);
+  border-bottom: 1px solid var(--main-colour);
+  border-right: 1px solid var(--main-colour);
+}
+
+.grass-right-of-hole {
+  width: 100%;
+  flex: 0.1;
+  height: 20px;
+  border-top: 1px solid var(--main-colour);
 }
 
 /* || About Page */
