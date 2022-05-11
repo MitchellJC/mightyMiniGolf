@@ -189,11 +189,11 @@ iframe {
 
 .arrow {
   border: 1px solid var(--main-colour);
-  background-color: teal;
-  background-image: var(--emphasis-grad);
+  background-color: var(--main-colour);
+  /* background-image: var(--); */
   color: white;
   font-size:xx-large;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 2rem 0.5rem 2rem 0.5rem;
   position: relative;
   cursor: pointer;
   user-select: none;
