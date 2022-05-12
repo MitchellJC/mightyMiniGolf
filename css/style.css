@@ -592,7 +592,7 @@ footer a:hover {
 @keyframes ball-rolling {
   from {left: 0px; transform: rotate(0deg);}
   95% {left: var(--ball-distance-to-move); transform: rotate(-90deg); margin-top: -60px; background-image: linear-gradient(to bottom left, darkseagreen 60%, rgb(78, 78, 78));}
-  to {left: var(--ball-distance-to-move); transform: rotate(-0deg); margin-top: 0; background-image: linear-gradient(to bottom, darkseagreen 50%, rgb(78, 78, 78));}
+  to {left: var(--ball-distance-to-move); transform: rotate(-0deg); margin-top: 0; background-image: linear-gradient(to bottom, darkseagreen 10%, rgb(78, 78, 78));}
 }
 
 #home-ball-animation-container {
