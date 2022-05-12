@@ -1,19 +1,28 @@
 (function(){
+    const HIDDEN_CLASS = "hidden";
     const UNSELECTED_DOT = "&#9899";
     const SELECTED_DOT = "&#9898";
     const SLIDESHOW_CHANGE_PERIOD =  7000;
 
+    // Slideshow
     const leftSlideshowArrow = document.getElementById("left-slideshow-arrow");
     const rightSlideshowArrow = document.getElementById("right-slideshow-arrow");
     const dots = document.getElementsByClassName("slideshow-dot");
     const slideshowImages = document.getElementsByClassName("slideshow-photo");
 
+    // Ball interaction
+    const cssRoot = document.querySelector(":root");
+    const ball = document.getElementById("ball");
+    const grassLeftOfHole = document.getElementById("grass-left-of-hole");
+
     /** Changes the current image on the slideshow to the 
-     * image corresponding to imageNum.
+     * image corresponding to imageNum. Resets the given 
+     * autoSlideShowEvent
      * 
      * @param {number} imageNum - Number to change image to.
+     * @return {number} Number representing new slideshow event ID.
      */
-    function changeSlideShowImage (imageNum) {
+    function changeSlideShowImage (imageNum, autoSlideShowEvent) {
         // Make the last slideshow image connect back to first.
         slideshowImagesEndIndex = slideshowImages.length - 1;
         if (imageNum > slideshowImagesEndIndex) {
@@ -28,14 +37,16 @@
 
         // Hide all images.
         for (const image of slideshowImages) {
-            image.classList.add("hidden");
+            image.classList.add(HIDDEN_CLASS);
         }
         // Convert all dots to unselected dot.
         for (const dot of dots) {
             dot.innerHTML= UNSELECTED_DOT;
         }
         currentDot.innerHTML = SELECTED_DOT;
-        currentImage.classList.remove("hidden"); 
+        currentImage.classList.remove(HIDDEN_CLASS); 
+
+        return resetSlideShowTime(autoSlideShowEvent);
     }
 
     /**
@@ -52,6 +63,7 @@
         return newAutoSlideShowEvent;
     }
 
+    // || Slide Show Logic
     let currentImageNum = 0;
     let autoSlideShowEvent = setInterval(() => {changeSlideShowImage(currentImageNum + 1)}, 
         SLIDESHOW_CHANGE_PERIOD);
@@ -61,17 +73,23 @@
         let dot = dots[index];
 
         dot.addEventListener("click", () => {
-            autoSlideShowEvent = resetSlideShowTime(autoSlideShowEvent);
-            changeSlideShowImage(index);
+            autoSlideShowEvent = changeSlideShowImage(index, autoSlideShowEvent);
         });
     }
 
     leftSlideshowArrow.addEventListener("click", () => {
-        autoSlideShowEvent = resetSlideShowTime(autoSlideShowEvent);
-        changeSlideShowImage(currentImageNum - 1);
+        autoSlideShowEvent = changeSlideShowImage(currentImageNum - 1, autoSlideShowEvent);
     });
     rightSlideshowArrow.addEventListener("click", () => {
-        autoSlideShowEvent = resetSlideShowTime(autoSlideShowEvent);
-        changeSlideShowImage(currentImageNum + 1);
+        autoSlideShowEvent = changeSlideShowImage(currentImageNum + 1, autoSlideShowEvent);
+    });
+
+    // || Ball interaction logic
+    ball.addEventListener("click", () => {
+        let ballTravelDistance = grassLeftOfHole.offsetWidth;
+
+        // setProperty to ensure that ball travels correct distance for screenwidth.
+        cssRoot.style.setProperty("--ball-distance-to-move", (ballTravelDistance) + "px");
+        ball.classList.add("ball-rolling");
     });
 })();
