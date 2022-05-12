@@ -1,5 +1,6 @@
 (function(){
     const HIDDEN_CLASS = "hidden";
+    const BALL_ROLLING_CLASS = "ball-rolling";
     const UNSELECTED_DOT = "&#9899";
     const SELECTED_DOT = "&#9898";
     const SLIDESHOW_CHANGE_PERIOD =  7000;
@@ -90,10 +91,10 @@
 
         // setProperty to ensure that ball travels correct distance for screenwidth.
         cssRoot.style.setProperty("--ball-distance-to-move", ballTravelDistance + "px");
-        ball.classList.add("ball-rolling");
+        ball.classList.add(BALL_ROLLING_CLASS);
     });
 
     window.addEventListener("resize", () => {
-        ball.classList.remove("ball-rolling");
+        ball.classList.remove(BALL_ROLLING_CLASS);
     });
 })();
