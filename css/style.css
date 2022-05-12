@@ -25,6 +25,9 @@
 
   --header-height: 6rem;
 
+  /* To be set by javascript. */
+  --ball-distance-to-move: 0px;
+
   scroll-behavior: smooth;
 }
 
@@ -586,6 +589,12 @@ footer a:hover {
 }
 
 /* || Home Ball Animation */
+@keyframes ball-rolling {
+  from {left: 0px; transform: rotate(0deg);}
+  95% {left: var(--ball-distance-to-move); transform: rotate(-90deg); margin-top: -60px; background-image: linear-gradient(to bottom left, darkseagreen 60%, rgb(78, 78, 78));}
+  to {left: var(--ball-distance-to-move); transform: rotate(-0deg); margin-top: 0; background-image: linear-gradient(to bottom, darkseagreen 50%, rgb(78, 78, 78));}
+}
+
 #home-ball-animation-container {
   display: flex;
   padding: 4rem 0 4rem 0;
@@ -594,14 +603,20 @@ footer a:hover {
 .ball{
   width: 60px;
   height: 60px;
-  border: 2px solid black;
   border-radius: 50%;
-  background-image: linear-gradient(to bottom left, white 60%, rgb(139, 139, 139));
+  background-image: linear-gradient(to bottom left, darkseagreen 60%, rgb(78, 78, 78));
   cursor: pointer;
   
   position: relative;
   margin-right: -60px;
-  margin-top: -63px;
+  margin-top: -60px;
+}
+
+.ball-rolling {
+  animation-name: ball-rolling;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .grass-left-of-hole {
@@ -612,8 +627,8 @@ footer a:hover {
 }
 
 .hole {
-  width: 80px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-left: 1px solid var(--main-colour);
   border-bottom: 1px solid var(--main-colour);
   border-right: 1px solid var(--main-colour);
