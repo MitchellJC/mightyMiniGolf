@@ -89,7 +89,11 @@
         let ballTravelDistance = grassLeftOfHole.offsetWidth;
 
         // setProperty to ensure that ball travels correct distance for screenwidth.
-        cssRoot.style.setProperty("--ball-distance-to-move", (ballTravelDistance) + "px");
+        cssRoot.style.setProperty("--ball-distance-to-move", ballTravelDistance + "px");
         ball.classList.add("ball-rolling");
+    });
+
+    window.addEventListener("resize", () => {
+        ball.classList.remove("ball-rolling");
     });
 })();
