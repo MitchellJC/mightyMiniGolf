@@ -1,6 +1,5 @@
 (function(){
     const form = document.getElementById("book-form");
-    const formHeight = form.getBoundingClientRect()["height"];
     const formSubmissionMessage = (firstName, lastName, email, phone, date,
         time, adultTickets, childTickets, concessionTickets, 
         partyTickets, holes, laserTag) =>   
@@ -33,7 +32,6 @@
             userInfo[field.id] = field.value;
         }
 
-        form.style.minHeight = `${formHeight}px`;
         form.innerHTML= formSubmissionMessage(
         userInfo["book-fname"], 
         userInfo["book-lname"], 

@@ -1,6 +1,5 @@
 (function(){
     const form = document.getElementById("contact-form");
-    const formHeight = form.getBoundingClientRect()["height"];
     const formSubmissionMessage = (firstName, lastName, email, phone, message) =>   
     `<p>
     Thank you for contacting us ${firstName}, 
@@ -24,7 +23,6 @@
             userInfo[field.id] = field.value;
         }
 
-        form.style.minHeight = `${formHeight}px`;
         form.innerHTML= formSubmissionMessage(
         userInfo["contact-fname"], 
         userInfo["contact-lname"], 
