@@ -706,15 +706,15 @@ table, th, tr, td{
   padding: 1rem;
   text-align: center;
   border-collapse: collapse;
-  border: 1px solid var(--light-colour);
+  border: 1px solid var(--main-colour);
 }
 
 th {
-  background-color: var(--dark-subtle-colour);
+  background-color: darkseagreen;
 }
 
 td {
-  background-color: var(--subtle-colour);
+  background-color: rgb(175, 209, 175);
 }
 
 .form-tickets label {
