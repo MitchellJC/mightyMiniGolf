@@ -696,6 +696,7 @@ footer a:hover {
 
 /* || Booking Page */
 table {
+  margin-top: 4rem;
   width: 100%;
   overflow-x: auto;
   table-layout: auto;
