@@ -17,13 +17,11 @@
     const grassLeftOfHole = document.getElementById("grass-left-of-hole");
 
     /** Changes the current image on the slideshow to the 
-     * image corresponding to imageNum. Resets the given 
-     * autoSlideShowEvent
+     * image corresponding to imageNum.
      * 
      * @param {number} imageNum - Number to change image to.
-     * @return {number} Number representing new slideshow event ID.
      */
-    function changeSlideShowImage (imageNum, autoSlideShowEvent) {
+    function changeSlideShowImage (imageNum) {
         // Make the last slideshow image connect back to first.
         slideshowImagesEndIndex = slideshowImages.length - 1;
         if (imageNum > slideshowImagesEndIndex) {
@@ -46,8 +44,6 @@
         }
         currentDot.innerHTML = SELECTED_DOT;
         currentImage.classList.remove(HIDDEN_CLASS); 
-
-        return resetSlideShowTime(autoSlideShowEvent);
     }
 
     /**
@@ -74,15 +70,18 @@
         let dot = dots[index];
 
         dot.addEventListener("click", () => {
-            autoSlideShowEvent = changeSlideShowImage(index, autoSlideShowEvent);
+            autoSlideShowEvent = resetSlideShowTime(autoSlideShowEvent);
+            changeSlideShowImage(index, autoSlideShowEvent);
         });
     }
 
     leftSlideshowArrow.addEventListener("click", () => {
-        autoSlideShowEvent = changeSlideShowImage(currentImageNum - 1, autoSlideShowEvent);
+        autoSlideShowEvent = resetSlideShowTime(autoSlideShowEvent);
+        changeSlideShowImage(currentImageNum - 1, autoSlideShowEvent);
     });
     rightSlideshowArrow.addEventListener("click", () => {
-        autoSlideShowEvent = changeSlideShowImage(currentImageNum + 1, autoSlideShowEvent);
+        autoSlideShowEvent = resetSlideShowTime(autoSlideShowEvent);
+        changeSlideShowImage(currentImageNum + 1, autoSlideShowEvent);
     });
 
     // || Ball interaction logic
