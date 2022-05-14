@@ -13,8 +13,10 @@
   --emphasis-colour: teal;
   --light-emphasis-colour: rgb(22, 165, 165);
 
+  --dark-colour: black;
   --light-colour: white;
   --shadow-colour: rgba(100, 99, 99, 0.788);
+  --ball-shadow-colour: rgb(78, 78, 78);
   --subtle-colour: lightgrey;
   --dark-subtle-colour: rgb(184, 183, 183);
 
@@ -50,7 +52,7 @@ h4 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--dark-colour);
 }
 
 .anchor {
@@ -542,8 +544,7 @@ footer a:hover {
 .arrow {
   border: 1px solid var(--main-colour);
   background-color: var(--main-colour);
-  /* background-image: var(--); */
-  color: white;
+  color: var(--light-colour);
   font-size:xx-large;
   padding: 2rem 0.5rem 2rem 0.5rem;
   position: relative;
@@ -591,8 +592,10 @@ footer a:hover {
 /* || Home Ball Animation */
 @keyframes ball-rolling {
   from {left: 0px; transform: rotate(0deg);}
-  95% {left: var(--ball-distance-to-move); transform: rotate(-90deg); margin-top: -60px; background-image: linear-gradient(to bottom left, darkseagreen 60%, rgb(78, 78, 78));}
-  to {left: var(--ball-distance-to-move); transform: rotate(-0deg); margin-top: 0; background-image: linear-gradient(to bottom, darkseagreen 10%, rgb(78, 78, 78));}
+  95% {left: var(--ball-distance-to-move); transform: rotate(-90deg); margin-top: -60px; 
+    background-image: linear-gradient(to bottom left, var(--main-colour) 60%, var(--ball-shadow-colour));}
+  to {left: var(--ball-distance-to-move); transform: rotate(-0deg); margin-top: 0; 
+    background-image: linear-gradient(to bottom, var(--main-colour) 10%, var(--ball-shadow-colour));}
 }
 
 #home-ball-animation-container {
@@ -604,7 +607,7 @@ footer a:hover {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-image: linear-gradient(to bottom left, darkseagreen 60%, rgb(78, 78, 78));
+  background-image: linear-gradient(to bottom left, var(--main-colour) 60%, var(--ball-shadow-colour));
   cursor: pointer;
   
   position: relative;
@@ -646,7 +649,7 @@ footer a:hover {
   padding: 1rem;
   margin-bottom: 0;
   background-image: linear-gradient(to bottom right, 
-    white, lightgrey);;
+    var(--light-colour), lightgrey);;
   color: var(--emphasis-colour);
   user-select: none;
   border: 1px solid var(--emphasis-colour);
@@ -654,7 +657,7 @@ footer a:hover {
 
 #faq-list h3:hover {
   background-image: linear-gradient(to bottom right, 
-    lightgrey, white);;
+    lightgrey, var(--light-colour));;
   color: var(--emphasis-colour);
 }
 
@@ -710,7 +713,7 @@ table, th, tr, td{
 }
 
 th {
-  background-color: darkseagreen;
+  background-color: var(--main-colour)
 }
 
 td {
