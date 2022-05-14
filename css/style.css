@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Teko&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&family=Teko&display=swap');
 
-/* || General */
 :root {
   --main-colour: darkseagreen;
   --darker-main-colour: rgb(119, 158, 119);
@@ -23,9 +22,15 @@
   --emphasis-grad: linear-gradient(to top left, var(--emphasis-colour), 
   var(--light-emphasis-colour));
   --emphasis-grad-clicked: linear-gradient(to bottom right, var(--emphasis-colour), 
-  var(--light-emphasis-colour)) ;
+  var(--light-emphasis-colour));
 
+  --standard-element-separation-length: 4rem;
   --header-height: 6rem;
+  --arbitrary-large-num: 999;
+
+  --burger-menu-animation-time: 0.25s;
+
+  --ball-size: 60px;
 
   /* To be set by javascript. */
   --ball-distance-to-move: 0px;
@@ -33,6 +38,7 @@
   scroll-behavior: smooth;
 }
 
+/* || General */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -132,8 +138,8 @@ input[type=number] {
 }
 
 section {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: var(--standard-element-separation-length);
+  margin-bottom: var(--standard-element-separation-length);
 }
 
 .content-container {
@@ -189,7 +195,7 @@ iframe {
 header {
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: var(--arbitrary-large-num);
 }
 
 nav {
@@ -288,7 +294,7 @@ nav ul a {
     position: relative;
   }
 
-  /* Animations to turn hamburger menu into an X */
+  /* || Animations to turn hamburger menu into an X */
   @keyframes line1-to-middle {
     from {top: 0rem;}
     to {top: 0.6rem;}
@@ -316,35 +322,34 @@ nav ul a {
 
   .line-1-to-x {
     animation-name: line1-to-middle, line1-rotate;
-    animation-delay: 0s, 0.25s;
-    animation-duration: 0.25s;
+    animation-delay: 0s, var(--burger-menu-animation-time);
+    animation-duration: var(--burger-menu-animation-time);
     animation-fill-mode: forwards;
   }
 
   .line-2-to-x {
     animation: line2-rotate 0.25s;
-    animation-delay: 0.25s;
+    animation-delay: var(--burger-menu-animation-time);
     animation-fill-mode: forwards;
   }
 
   .line-3-to-x {
     animation-name: line3-to-middle, line3-rotate;
-    animation-delay: 0s, 0.25s;
-    animation-duration: 0.25s;
+    animation-delay: 0s, var(--burger-menu-animation-time);
+    animation-duration: var(--burger-menu-animation-time);
     animation-fill-mode: forwards;
   }
 
   .line-1-to-burger {
-    
     animation-name: line1-to-middle, line1-rotate;
-    animation-delay: 0.25s, 0s;
-    animation-duration: 0.25s;
+    animation-delay: var(--burger-menu-animation-time), 0s;
+    animation-duration: var(--burger-menu-animation-time);
     animation-fill-mode: backwards;
     animation-direction: reverse;
   }
 
   .line-2-to-burger {
-    animation: line2-rotate 0.25s;
+    animation: line2-rotate var(--burger-menu-animation-time);
     animation-delay: 0s;
     animation-fill-mode: backwards;
     animation-direction: reverse;
@@ -352,8 +357,8 @@ nav ul a {
 
   .line-3-to-burger {
     animation-name: line3-to-middle, line3-rotate ;
-    animation-delay: 0.25s, 0s;
-    animation-duration: 0.25s;
+    animation-delay: var(--burger-menu-animation-time), 0s;
+    animation-duration: var(--burger-menu-animation-time);
     animation-fill-mode: backwards;
     animation-direction: reverse;
   }
@@ -380,7 +385,7 @@ nav ul a {
   }
 
   .nav-links-open {
-    /* Arbitrary large number to allow auto height to grow menu */
+    /* Large number to allow auto height to grow menu */
     max-height: 20rem;
   }
 }
@@ -397,7 +402,7 @@ footer {
 }
 
 .footer-information-box {
-  margin-bottom: 4rem;
+  margin-bottom: var(--standard-element-separation-length);
 }
 
 .footer-information-box a {
@@ -422,7 +427,7 @@ footer {
 .page-list {
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -458,8 +463,8 @@ footer a:hover {
 .home-grid {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 4rem;
-  margin: 4rem 0 4rem 0;
+  gap: var(--standard-element-separation-length);
+  margin: var(--standard-element-separation-length) 0 var(--standard-element-separation-length) 0;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -469,7 +474,7 @@ footer a:hover {
   }
 
   picture {
-    margin: 1rem auto 4rem auto;
+    margin: 1rem auto var(--standard-element-separation-length) auto;
   }
 }
 
@@ -535,7 +540,7 @@ footer a:hover {
 
 /* || Photo Slideshows */
 .photo-slideshow {
-  margin: 4rem 0 4rem 0;
+  margin: var(--standard-element-separation-length) 0 var(--standard-element-separation-length) 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -592,7 +597,7 @@ footer a:hover {
 /* || Home Ball Animation */
 @keyframes ball-rolling {
   from {left: 0px; transform: rotate(0deg);}
-  95% {left: var(--ball-distance-to-move); transform: rotate(-90deg); margin-top: -60px; 
+  95% {left: var(--ball-distance-to-move); transform: rotate(-90deg); margin-top: calc(-1 * var(--ball-size)); 
     background-image: linear-gradient(to bottom left, var(--main-colour) 60%, var(--ball-shadow-colour));}
   to {left: var(--ball-distance-to-move); transform: rotate(-0deg); margin-top: 0; 
     background-image: linear-gradient(to bottom, var(--main-colour) 10%, var(--ball-shadow-colour));}
@@ -600,19 +605,19 @@ footer a:hover {
 
 #home-ball-animation-container {
   display: flex;
-  padding: 4rem 0 4rem 0;
+  padding: var(--standard-element-separation-length) 0 var(--standard-element-separation-length) 0;
 }
 
 .ball{
-  width: 60px;
-  height: 60px;
+  width: var(--ball-size);
+  height: var(--ball-size);
   border-radius: 50%;
   background-image: linear-gradient(to bottom left, var(--main-colour) 60%, var(--ball-shadow-colour));
   cursor: pointer;
   
   position: relative;
-  margin-right: -60px;
-  margin-top: -60px;
+  margin-right: calc(-1 * var(--ball-size));
+  margin-top: calc(-1 * var(--ball-size));
 }
 
 .ball-rolling {
@@ -630,8 +635,8 @@ footer a:hover {
 }
 
 .hole {
-  width: 60px;
-  height: 60px;
+  width: var(--ball-size);
+  height: var(--ball-size);
   border-left: 1px solid var(--main-colour);
   border-bottom: 1px solid var(--main-colour);
   border-right: 1px solid var(--main-colour);
@@ -681,7 +686,7 @@ footer a:hover {
 }
 
 .answer-box-open {
-  /* Arbitrary large value so height will auto grow to full size*/
+  /* Large value so height will auto grow to full size*/
   max-height: 20rem;
   transition: max-height 1s;
 }
@@ -699,7 +704,7 @@ footer a:hover {
 
 /* || Booking Page */
 table {
-  margin-top: 4rem;
+  margin-top: var(--standard-element-separation-length);
   width: 100%;
   overflow-x: auto;
   table-layout: auto;
