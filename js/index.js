@@ -65,6 +65,8 @@
     let autoSlideShowEvent = setInterval(() => {changeSlideShowImage(currentImageNum + 1)}, 
         SLIDESHOW_CHANGE_PERIOD);
 
+    let ball_in_hole = false;
+
     // Make clicking dots change slideshow image.
     for (let index = 0; index < dots.length; index++) {
         let dot = dots[index];
@@ -86,14 +88,23 @@
 
     // || Ball interaction logic
     ball.addEventListener("click", () => {
-        let ballTravelDistance = grassLeftOfHole.offsetWidth;
+        if (!ball_in_hole) {
+            let ballTravelDistance = grassLeftOfHole.offsetWidth;
 
-        // setProperty to ensure that ball travels correct distance for screenwidth.
-        cssRoot.style.setProperty("--ball-distance-to-move", ballTravelDistance + "px");
-        ball.classList.add(BALL_ROLLING_CLASS);
+            // setProperty to ensure that ball travels correct distance for screenwidth.
+            cssRoot.style.setProperty("--ball-distance-to-move", ballTravelDistance + "px");
+            ball.classList.add(BALL_ROLLING_CLASS);
+
+            ball_in_hole = true;
+        } else {
+            ball.classList.remove(BALL_ROLLING_CLASS);
+            ball_in_hole = false;
+        }
+        
     });
 
     window.addEventListener("resize", () => {
         ball.classList.remove(BALL_ROLLING_CLASS);
+        ball_in_hole = false;
     });
 })();
