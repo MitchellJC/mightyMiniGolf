@@ -20,8 +20,10 @@
      * image corresponding to imageNum.
      * 
      * @param {number} imageNum - Number to change image to.
+     * @param {HTMLCollection} dots - Dot elements of slideshow.
+     * @param {HTMLCollection} slideShowImages - Image elements of slideshow.
      */
-    function changeSlideShowImage (imageNum) {
+    function changeSlideShowImage (imageNum, dots, slideshowImages) {
         // Make the last slideshow image connect back to first.
         slideshowImagesEndIndex = slideshowImages.length - 1;
         if (imageNum > slideshowImagesEndIndex) {
@@ -55,17 +57,17 @@
      */
     function resetSlideShowTime(autoSlideShowEvent) {
         clearInterval(autoSlideShowEvent);
-        newAutoSlideShowEvent = setInterval(() => {changeSlideShowImage(currentImageNum + 1)}, 
+        newAutoSlideShowEvent = setInterval(() => {
+            changeSlideShowImage(currentImageNum + 1, dots, slideshowImages)}, 
             SLIDESHOW_CHANGE_PERIOD);
         return newAutoSlideShowEvent;
     }
 
-    // || Slide Show Logic
+    // || Slideshow Logic
     let currentImageNum = 0;
-    let autoSlideShowEvent = setInterval(() => {changeSlideShowImage(currentImageNum + 1)}, 
+    let autoSlideShowEvent = setInterval(() => {
+        changeSlideShowImage(currentImageNum + 1, dots, slideshowImages)}, 
         SLIDESHOW_CHANGE_PERIOD);
-
-    let ball_in_hole = false;
 
     // Make clicking dots change slideshow image.
     for (let index = 0; index < dots.length; index++) {
@@ -73,20 +75,22 @@
 
         dot.addEventListener("click", () => {
             autoSlideShowEvent = resetSlideShowTime(autoSlideShowEvent);
-            changeSlideShowImage(index, autoSlideShowEvent);
+            changeSlideShowImage(index, dots, slideshowImages);
         });
     }
 
     leftSlideshowArrow.addEventListener("click", () => {
         autoSlideShowEvent = resetSlideShowTime(autoSlideShowEvent);
-        changeSlideShowImage(currentImageNum - 1, autoSlideShowEvent);
+        changeSlideShowImage(currentImageNum - 1, dots, slideshowImages);
     });
     rightSlideshowArrow.addEventListener("click", () => {
         autoSlideShowEvent = resetSlideShowTime(autoSlideShowEvent);
-        changeSlideShowImage(currentImageNum + 1, autoSlideShowEvent);
+        changeSlideShowImage(currentImageNum + 1, dots, slideshowImages);
     });
 
     // || Ball interaction logic
+    let ball_in_hole = false;
+
     ball.addEventListener("click", () => {
         if (!ball_in_hole) {
             let ballTravelDistance = grassLeftOfHole.offsetWidth;
