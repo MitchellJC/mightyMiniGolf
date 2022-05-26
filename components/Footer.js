@@ -17,12 +17,6 @@ const FOOTER_HTML =
 
     <ul class="page-list">
         <li>
-          <a class="footer-page" href="index.html">Home Page</a>
-          <ul>
-            
-          </ul>
-        </li>
-        <li>
           <a class="footer-page" href="about.html">About Us</a>
           <ul>
             <li><a href="about.html#about-text-anchor">What We are About</a></li>
