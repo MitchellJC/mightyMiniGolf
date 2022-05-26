@@ -46,11 +46,22 @@
       <section id="menu-section">
         <div class="section-text">
           <a id="menu-anchor" class="anchor"></a>
-          <h2>Our Menu</h2>
+          <h2 class="no-margin">Our Menu</h2>
         </div>
-      </section>
 
-      <img class="menu" src="../images/menu.jpg" width="800px" />
+        <picture class="menu-picture">
+          <source media="(min-width:425px)" srcset="../images/menu.png" />
+          <source
+            media="(max-width:425px)"
+            srcset="../images/menu-cropped.png"
+          />
+          <img
+            class="menu"
+            src="../images/menu-cropped.png"
+            alt="Picture of menu."
+          />
+        </picture>
+      </section>
     </div>
     <footer-component></footer-component>
   </body>

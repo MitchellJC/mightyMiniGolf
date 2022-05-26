@@ -142,6 +142,10 @@ section {
   margin-bottom: var(--standard-element-separation-length);
 }
 
+.no-margin {
+  margin: 0;
+}
+
 .content-container {
   margin-right: 20%;
   margin-left: 20%;
@@ -692,9 +696,24 @@ footer a:hover {
 }
 
 /* || Food and Drink Page */
+.menu-picture{
+  border-top: none;
+  display: block;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .menu {
+  border: none;
+  margin: 0;
   max-width: 100%;
   width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu-picture {
+    margin: 0;
+  }
 }
 
 /* || Contact Page */
@@ -703,8 +722,11 @@ footer a:hover {
 }
 
 /* || Booking Page */
+.price-section h2, .price-section .section-text { 
+  background-color: var(--main-colour);
+}
+
 table {
-  margin-top: var(--standard-element-separation-length);
   width: 100%;
   overflow-x: auto;
   table-layout: auto;
@@ -714,15 +736,17 @@ table, th, tr, td{
   padding: 1rem;
   text-align: center;
   border-collapse: collapse;
-  border: 1px solid var(--main-colour);
 }
 
 th {
-  background-color: var(--main-colour)
+  background-color: var(--main-colour);
+  border: 1px solid rgb(175, 209, 175);
+
 }
 
 td {
   background-color: rgb(175, 209, 175);
+  border: 1px solid var(--main-colour);
 }
 
 .form-tickets label {
