@@ -83,6 +83,12 @@ img {
   margin: 2rem auto 2rem auto;
 }
 
+@media only screen and (max-width: 425px) {
+  img {
+    max-width: 90%;
+  }
+}
+
 picture {
   margin: auto;
   border: 1px solid var(--main-colour);
