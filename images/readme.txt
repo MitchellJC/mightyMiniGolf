@@ -1,1 +1,0 @@
-Images sized to 400 width and cropped to 250 height
