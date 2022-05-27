@@ -682,16 +682,16 @@ footer a:hover {
   transition-delay: 0;
 }
 
-.answer-box p {
-  padding: 1rem;
-  margin: 0;
-  background-color:ghostwhite;
-}
-
 .answer-box-open {
   /* Large value so height will auto grow to full size*/
   max-height: 20rem;
   transition: max-height 1s;
+}
+
+.answer-box p {
+  padding: 1rem;
+  margin: 0;
+  background-color:ghostwhite;
 }
 
 /* || Food and Drink Page */
