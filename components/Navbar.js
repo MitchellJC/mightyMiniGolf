@@ -3,10 +3,7 @@ const NAVBAR_HTML =
 <header>
 <nav>
   <a class="home-link" href="../index.html">
-    <picture class="home-logo">
-      <source srcset="images/golfball-50px.svg">
-      <img class="home-logo" src="../images/golfball-50px.svg" alt="Golf ball">
-    </picture>
+    <img class="home-logo" src="../images/golfball-50px.svg" alt="Golf ball">
     <span class="logo-text">Mighty Mini Golf</span>
   </a>
 

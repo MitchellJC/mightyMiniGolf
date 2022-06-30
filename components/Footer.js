@@ -5,10 +5,7 @@ const FOOTER_HTML =
   <div class="padding-div">
     <div class="footer-information-box">
       <a class="home-link" href="index.html">
-        <picture class="home-logo">
-          <source srcset="images/golfball-50px.svg">
-          <img class="home-logo" src="../images/golfball-50px.svg" alt="Golf ball">
-        </picture>
+        <img class="home-logo" src="../images/golfball-50px.svg" alt="Golf ball">
         <span class="logo-text">Mighty Mini Golf</span>
       </a>
       <p class="footer-information">23 Mills Street, Brisbane, Queensland(QLD), 4000</p>
