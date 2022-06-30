@@ -89,8 +89,8 @@ img {
   }
 }
 
-picture {
-  margin: auto;
+.home-grid picture {
+  margin: 1rem auto 1rem auto;
   border: 1px solid var(--main-colour);
 }
 
