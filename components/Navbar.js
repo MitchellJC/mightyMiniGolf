@@ -2,7 +2,7 @@ const NAVBAR_HTML =
 `
 <header>
 <nav>
-  <a class="home-link" href="../index.html">
+  <a class="home-link" href="index.html">
     <img class="home-logo" src="../images/golfball-50px.svg" alt="Golf ball">
     <span class="logo-text">Mighty Mini Golf</span>
   </a>
