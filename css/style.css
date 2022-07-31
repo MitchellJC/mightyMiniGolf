@@ -500,14 +500,15 @@ footer a:hover {
 }
 
 .hero-section h2 {
-  background-color: rgb(165, 218, 165);
+  background-color: rgb(115, 167, 115);
   margin: 0;
   padding: 1rem;
   text-align: center;
   font-size: x-large;
   font-weight: bold;
   font-style: italic;
-  color: black;
+  color: white;
+  text-shadow: 0.1rem 0.1rem black;
   border: 1px solid var(--dark-main-colour);
   width: 90%;
 }
