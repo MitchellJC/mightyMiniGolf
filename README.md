@@ -1,2 +1,2 @@
 # mightyMiniGolf
-Frontend for mini golf website.
+Responsive frontend for mini golf website.
