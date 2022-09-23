@@ -507,6 +507,9 @@ footer a:hover {
   font-size: x-large;
   font-weight: bold;
   font-style: italic;
+  /* Simulates text stroke */
+  text-shadow: .1rem .1rem rgb(146, 77, 39), -.1rem -.1rem rgb(146, 77, 39), 
+  .1rem -.1rem rgb(146, 77, 39), -.1rem .1rem rgb(146, 77, 39);
   color: white;
   border: 1px solid var(--dark-main-colour);
   width: 90%;
