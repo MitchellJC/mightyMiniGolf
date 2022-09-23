@@ -496,7 +496,7 @@ footer a:hover {
   background-position: center;
   background-size: cover 100vw;
   height: calc(100vh - var(--header-height));
-  width: 100%;
+  /* width: 100%; */
 }
 
 .hero-section h2 {
