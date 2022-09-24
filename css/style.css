@@ -131,6 +131,7 @@ input[type=submit] {
   margin-top: 1rem;
   width: 50%;
   background-color: var(--light-colour);
+  color: black;
 }
 
 input[type=submit]:hover {
